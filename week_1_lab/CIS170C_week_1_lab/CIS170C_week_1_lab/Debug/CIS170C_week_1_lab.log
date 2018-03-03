@@ -1,0 +1,3 @@
+﻿  CIS170C_week_1_lab_B.cpp
+CIS170C_week_1_lab_B.obj : error LNK2005: _main already defined in CIS170C_week_1_lab.obj
+J:\Projects\devry-university\week_1_lab\CIS170C_week_1_lab\Debug\CIS170C_week_1_lab.exe : fatal error LNK1169: one or more multiply defined symbols found
