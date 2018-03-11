@@ -1,0 +1,7 @@
+﻿  snake_game_windows.cpp
+j:\projects\devry-university\course_project\snake_game_windows\snake_game_windows\snake_game_windows.cpp(14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+j:\projects\devry-university\course_project\snake_game_windows\snake_game_windows\snake_game_windows.cpp(47): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+j:\projects\devry-university\course_project\snake_game_windows\snake_game_windows\snake_game_windows.cpp(109): warning C4018: '<=': signed/unsigned mismatch
+j:\projects\devry-university\course_project\snake_game_windows\snake_game_windows\snake_game_windows.cpp(158): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+j:\projects\devry-university\course_project\snake_game_windows\snake_game_windows\snake_game_windows.cpp(179): error C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(1282): note: see declaration of '_sleep'
