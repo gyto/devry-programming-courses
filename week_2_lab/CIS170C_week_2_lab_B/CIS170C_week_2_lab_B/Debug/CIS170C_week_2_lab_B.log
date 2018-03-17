@@ -1,2 +1,2 @@
 ﻿  CIS170C_week_2_lab_B.cpp
-  CIS170C_week_2_lab_B.vcxproj -> J:\Projects\devry-university\week_2_lab\CIS170C_week_2_lab_B\Debug\CIS170C_week_2_lab_B.exe
+j:\projects\devry-university\week_2_lab\cis170c_week_2_lab_b\cis170c_week_2_lab_b\cis170c_week_2_lab_b.cpp(58): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
