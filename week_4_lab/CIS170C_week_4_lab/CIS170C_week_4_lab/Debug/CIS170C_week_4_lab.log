@@ -1,0 +1,3 @@
+﻿  CIS170C_week_4_lab.cpp
+j:\projects\devry-university\week_4_lab\cis170c_week_4_lab\cis170c_week_4_lab\cis170c_week_4_lab.cpp(38): warning C4244: 'initializing': conversion from 'time_t' to 'unsigned int', possible loss of data
+  CIS170C_week_4_lab.vcxproj -> J:\Projects\devry-university\week_4_lab\CIS170C_week_4_lab\Debug\CIS170C_week_4_lab.exe
