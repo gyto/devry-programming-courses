@@ -1,2 +1,3 @@
-﻿  snake_game_windows.cpp
+﻿  stdafx.cpp
+  snake_game_windows.cpp
   snake_game_windows.vcxproj -> J:\Projects\devry-university\course_project\snake_game_windows\Debug\snake_game_windows.exe
