@@ -1,0 +1,4 @@
+﻿  CIS247C_week_1_lab.cpp
+j:\projects\devry-university\cis247c\week_1_lab\cis247c_week_1_lab\cis247c_week_1_lab\cis247c_week_1_lab.cpp(49): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+j:\projects\devry-university\cis247c\week_1_lab\cis247c_week_1_lab\cis247c_week_1_lab\cis247c_week_1_lab.cpp(137): warning C4129: 'E': unrecognized character escape sequence
+  CIS247C_week_1_lab.vcxproj -> J:\Projects\devry-university\CIS247C\week_1_lab\CIS247C_week_1_lab\Debug\CIS247C_week_1_lab.exe
