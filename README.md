@@ -1,2 +1,2 @@
-# devry-CIS170C
-Code backup for the CIS170C class
+# devry-programming-courses
+Code backup for the DeVry Programming Courses
