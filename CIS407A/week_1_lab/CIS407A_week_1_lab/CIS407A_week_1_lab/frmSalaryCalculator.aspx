@@ -7,19 +7,22 @@
     <title></title>
 </head>
 <body>
+    <div>
+        <h1>Week 1: Annual Salary Calculator ASP.NET Web application</h1>
+    </div>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label2" runat="server" Text="Annual Hours"></asp:Label>
+            <asp:Label ID="lblAnnualHours" runat="server" Text="Annual Hours"></asp:Label>
 &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtAnnualHours" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Label ID="Label1" runat="server" Text="Rate"></asp:Label>
+            <asp:Label ID="lblPayRate" runat="server" Text="Rate"></asp:Label>
 &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtPayRate" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="btnCalculateSalary" runat="server" Text=" Calculate Salary" />
+            <asp:Button ID="btnCalculateSalary" runat="server" Text="Calculate Salary" OnClick="btnCalculateSalary_Click" />
             <br />
             <br />
             <br />

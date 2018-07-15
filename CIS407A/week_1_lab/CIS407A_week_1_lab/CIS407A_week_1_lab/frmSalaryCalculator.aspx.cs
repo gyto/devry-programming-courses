@@ -12,8 +12,17 @@ public partial class frmSalaryCalculator : System.Web.UI.Page
 
     }
 
-    protected void TextBox2_TextChanged(object sender, EventArgs e)
+    protected void btnCalculateSalary_Click(object sender, EventArgs e)
     {
+        double annualHours = 0;
+        double payRate = 0;
+        double salary = 0;
 
+        annualHours = Double.Parse(txtAnnualHours.Text);
+        payRate = Double.Parse(txtPayRate.Text);
+
+        salary = annualHours * payRate;
+
+        lblAnnualSalary.Text = "Annual Salary is " + salary.ToString("C");
     }
 }
