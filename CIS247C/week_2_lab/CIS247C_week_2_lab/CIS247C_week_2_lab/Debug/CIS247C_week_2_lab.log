@@ -1,0 +1,5 @@
+﻿  Card.cpp
+j:\projects\devry-university\cis247c\week_2_lab\cis247c_week_2_lab\cis247c_week_2_lab\card.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Source.cpp
+  Generating Code...
+  CIS247C_week_2_lab.vcxproj -> J:\Projects\devry-university\CIS247C\week_2_lab\CIS247C_week_2_lab\Debug\CIS247C_week_2_lab.exe
