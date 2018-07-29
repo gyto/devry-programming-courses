@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="offset-2 col-8">
+            <div class="offset-lg-2 col-lg-8 col-12">
                 <div class="card p-4 mt-3">
                     <form id="form1" runat="server">
                         <div class="d-flex justify-content-center">
