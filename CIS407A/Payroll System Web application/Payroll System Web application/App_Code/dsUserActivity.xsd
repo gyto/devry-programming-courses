@@ -60,10 +60,10 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="dsUserActivity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsUserActivity" msprop:Generator_DataSetName="dsUserActivity">
+  <xs:element name="dsUserActivity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsUserActivity" msprop:Generator_UserDSName="dsUserActivity">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tblUserActivity" msprop:Generator_TableClassName="tblUserActivityDataTable" msprop:Generator_TableVarName="tabletblUserActivity" msprop:Generator_TablePropName="tblUserActivity" msprop:Generator_RowDeletingName="tblUserActivityRowDeleting" msprop:Generator_RowChangingName="tblUserActivityRowChanging" msprop:Generator_RowEvHandlerName="tblUserActivityRowChangeEventHandler" msprop:Generator_RowDeletedName="tblUserActivityRowDeleted" msprop:Generator_UserTableName="tblUserActivity" msprop:Generator_RowChangedName="tblUserActivityRowChanged" msprop:Generator_RowEvArgName="tblUserActivityRowChangeEvent" msprop:Generator_RowClassName="tblUserActivityRow">
+        <xs:element name="tblUserActivity" msprop:Generator_TableClassName="tblUserActivityDataTable" msprop:Generator_TableVarName="tabletblUserActivity" msprop:Generator_RowChangedName="tblUserActivityRowChanged" msprop:Generator_TablePropName="tblUserActivity" msprop:Generator_RowDeletingName="tblUserActivityRowDeleting" msprop:Generator_RowChangingName="tblUserActivityRowChanging" msprop:Generator_RowEvHandlerName="tblUserActivityRowChangeEventHandler" msprop:Generator_RowDeletedName="tblUserActivityRowDeleted" msprop:Generator_RowClassName="tblUserActivityRow" msprop:Generator_UserTableName="tblUserActivity" msprop:Generator_RowEvArgName="tblUserActivityRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ActivityID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnActivityID" msprop:Generator_ColumnPropNameInRow="ActivityID" msprop:Generator_ColumnPropNameInTable="ActivityIDColumn" msprop:Generator_UserColumnName="ActivityID" type="xs:int" />

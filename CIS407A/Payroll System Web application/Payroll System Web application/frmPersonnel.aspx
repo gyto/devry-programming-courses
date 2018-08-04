@@ -60,8 +60,8 @@
                                 </div>
                                 <div class="d-flex mt-3">
                                     <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnAddEmployee_Click" CssClass="btn btn-primary btn-block mr-1" />
-                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="btn btn-danger btn-block mt-0 ml-1" PostBackUrl="~/frmMain.aspx" />
-                                </div>
+                                    <asp:Button ID="btnViewPersonnel" runat="server" Text="View Personnel" CssClass="btn btn-info mr-1 ml-1" PostBackUrl="~/frmViewPersonnel.aspx" />
+                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="btn btn-danger btn-block mt-0 ml-1" PostBackUrl="~/frmMain.aspx" />                                </div>
                             </asp:Panel>
                         </div>
                     </form>

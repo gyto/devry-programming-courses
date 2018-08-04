@@ -37,6 +37,37 @@ public class clsDataLayer
         return DS;
     }
 
+    // Function gets the peronnel from the tblPersonnel
+    public static dsPersonnel GetPersonnel(string Database, string strSearch)
+    {
+        // Create a get method to the tblPersonnel in order to get data, similar to GetUserActivity
+        dsPersonnel DS;
+        OleDbConnection sqlConn;
+        OleDbDataAdapter sqlDA;
+
+        // Use provider in order to read from file
+        sqlConn = new OleDbConnection("PROVIDER=Microsoft.ACE.OLEDB.12.0;" + "Data Source=" + Database);
+
+        // check if the search was entered first or its null
+        if (strSearch == null || strSearch.Trim() == "")
+        {
+            sqlDA = new OleDbDataAdapter("select * from tblPersonnel", sqlConn);
+        }
+        else
+        {
+            sqlDA = new OleDbDataAdapter("select * from tblPersonnel where LastName = '" + strSearch + "'", sqlConn);
+        }
+
+        // Instantiate the dataset object
+        DS = new dsPersonnel();
+
+        // Put the imported information into the dataset table
+        sqlDA.Fill(DS.tblPersonnel);
+
+        // Send the datase back to the calling form for display
+        return DS;
+    }
+
     // This function saves the user activity from tblUserActivity
     public static void SaveUserActivity(string Database, string FormAccessed)
     {
@@ -90,5 +121,49 @@ public class clsDataLayer
 
         // Just return IP address to the function
         return IP4Address;
+    }
+
+    // This function will save Personeel data to database
+    public static bool SavePersonnel(string Database, string FIrstName, string LastName, string PayRate, string StartDate, string EndDate)
+    {
+        bool recordSaved;
+        try
+        {
+            // Connect to the database records
+            OleDbConnection conn = new OleDbConnection("PROVIDER=Microsoft.ACE.OLEDB.12.0;" + "Data Source=" + Database);
+            conn.Open();
+            OleDbCommand command = conn.CreateCommand();
+            string strSQL;
+
+            // Add created records to the table row
+            strSQL = "Insert into tblPersonnel " +
+                "(FirstName, LastName, PayRate, StartDate, EndDate) values ('" +
+                FIrstName +
+                "', '" +
+                LastName +
+                "', " +
+                PayRate +
+                ", '" +
+                StartDate +
+                "', '" +
+                EndDate +
+                "')";
+
+            // Convert command type
+            command.CommandType = CommandType.Text;
+            command.CommandText = strSQL;
+
+            // Execute non query function
+            command.ExecuteNonQuery();
+
+            // Close connection
+            conn.Close();
+            recordSaved = true;
+        } catch (Exception ex)
+        {
+            recordSaved = false;
+        }
+
+        return recordSaved;
     }
 }

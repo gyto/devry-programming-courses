@@ -21,7 +21,8 @@
                             <asp:Panel ID="Panel1" runat="server" Height="250px" Width="650px">
                                 <div class="form-group d-flex flex-column align-items-center">
                                     <asp:Label ID="informationToSubmit" runat="server" Text="Information to Submit" CssClass="h3"></asp:Label>
-                                    <asp:TextBox ID="txtVerifiedInfo" runat="server" Height="80px" TextMode="MultiLine" Width="400px" CssClass="form-control"></asp:TextBox>
+                                    <asp:TextBox ID="txtVerifiedInfo" runat="server" Height="160px" TextMode="MultiLine" Width="400px" CssClass="form-control"></asp:TextBox>
+                                    <asp:Button ID="btnViewPersonnel" runat="server" Text="View Personnel" CssClass="btn btn-info mt-3" PostBackUrl="~/frmViewPersonnel.aspx" />
                                 </div>
                             </asp:Panel>
                         </div>

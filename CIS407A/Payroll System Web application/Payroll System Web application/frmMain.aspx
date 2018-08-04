@@ -44,6 +44,22 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="card mb-2">
+                                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/view-personnel.png" CssClass="card-img-top" PostBackUrl="~/frmViewPersonnel.aspx" />
+                                        <div class="card-body">
+                                            <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/frmViewPersonnel.aspx" CssClass="btn btn-primary btn-block">View Personnel</asp:LinkButton>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-xl-4">
+                                    <div class="card mb-2">
+                                        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Images/search.png" CssClass="card-img-top" PostBackUrl="~/frmSearchPersonnel.aspx" />
+                                        <div class="card-body">
+                                            <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/frmSearchPersonnel.aspx" CssClass="btn btn-primary btn-block">Search Personnel</asp:LinkButton>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </asp:Panel>    
                     </div>
