@@ -1,0 +1,5 @@
+﻿  Source.cpp
+  Wings.cpp
+j:\projects\devry-university\cis247c\week_3_lab\cis247c_week_3_lab\cis247c_week_3_lab\wings.cpp(39): warning C4267: 'initializing': conversion from 'size_t' to 'short', possible loss of data
+  Generating Code...
+  CIS247C_week_3_lab.vcxproj -> J:\Projects\devry-university\CIS247C\week_3_lab\CIS247C_week_3_lab\Debug\CIS247C_week_3_lab.exe

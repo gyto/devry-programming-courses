@@ -22,7 +22,7 @@
                             <div class="row">                               
                                 
                                 <asp:Label ID="Label1" runat="server" Text="User Activity" CssClass="h2 text-center w-100 mb-2"></asp:Label>
-                                <div class="d-flex justify-content-center">
+                                <div class="d-flex justify-content-center w-100">
                                     <asp:GridView ID="grdUserActivity" runat="server" CssClass="table table-bordered"></asp:GridView>
                                 </div>
                                 
