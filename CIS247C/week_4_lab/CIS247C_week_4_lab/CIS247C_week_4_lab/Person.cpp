@@ -69,7 +69,7 @@ string Person::readFromFile(void)
 		iFile.ignore(1);
 
 		// tell the user that the data has been loaded
-		return name + "'s data has been loaded from teh file.";
+		return name + "'s data has been loaded from the file.";
 	}
 
 }
