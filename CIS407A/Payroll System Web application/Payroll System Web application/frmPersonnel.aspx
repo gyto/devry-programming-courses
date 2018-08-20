@@ -22,7 +22,7 @@
                             <asp:ImageButton ID="Image1" runat="server" ImageAlign="Middle" ImageUrl="~/Images/CIS407A_iLab_ACITLogo.jpg" CssClass="img-fluid" PostBackUrl="~/frmMain.aspx" />
                         </div>
                         <div class="d-flex justify-content-center">
-                            <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Left" Width="300px">
+                            <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Left" Width="350px">
 
                                 <!-- Error Message Start -->
                                 <asp:Label ID="lblError" runat="server" Text="" CssClass="alert alert-danger"></asp:Label>
@@ -32,36 +32,39 @@
                                     <asp:Label ID="firstName" runat="server" Text="First Name:" CssClass="col-sm-4 col-form-label col-form-label-sm"></asp:Label>
                                     <div class="col-sm-8">
                                         <asp:TextBox ID="txtFirstName" runat="server" CssClass="form-control form-control-sm"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorFirstName" runat="server" ErrorMessage="First Name cannot be blank" ControlToValidate="txtFirstName" CssClass="text-danger" Display="Dynamic"></asp:RequiredFieldValidator>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-1">
                                     <asp:Label ID="lastName" runat="server" Text="Last Name:" CssClass="col-sm-4 col-form-label col-form-label-sm"></asp:Label>
                                     <div class="col-sm-8">
                                         <asp:TextBox ID="txtLastName" runat="server" CssClass="form-control form-control-sm"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorLastName" runat="server" ErrorMessage="Last Name cannot be blank" ControlToValidate="txtLastName" CssClass="text-danger" Display="Dynamic"></asp:RequiredFieldValidator>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-1">
                                     <asp:Label ID="payRate" runat="server" Text="Pay Rate:" CssClass="col-sm-4 col-form-label col-form-label-sm"></asp:Label>
                                     <div class="col-sm-8">
                                         <asp:TextBox ID="txtPayRate" runat="server" CssClass="form-control form-control-sm"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorPayRate" runat="server" ErrorMessage="Pay Rate cannot be blank" ControlToValidate="txtPayRate" CssClass="text-danger" Display="Dynamic"></asp:RequiredFieldValidator>
                                      </div>
                                 </div>
                                 <div class="form-group row mb-1">
                                     <asp:Label ID="startDate" runat="server" Text="Start Date:" CssClass="col-sm-4 col-form-label col-form-label-sm"></asp:Label>
                                     <div class="col-sm-8">
-                                        <asp:TextBox ID="txtStartDate" runat="server" TextMode="Date" CssClass="form-control form-control-sm"></asp:TextBox>
+                                        <asp:TextBox ID="txtStartDate" runat="server" CssClass="form-control form-control-sm"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionValidatorStartDate" runat="server" ErrorMessage="Need to be in date format" ClientIDMode="Inherit" ControlToValidate="txtStartDate" Display="Dynamic" ValidationExpression="^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$" CssClass="text-danger"></asp:RegularExpressionValidator>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-1">
                                     <asp:Label ID="endDate" runat="server" Text="End Date:" CssClass="col-sm-4 col-form-label col-form-label-sm"></asp:Label>
                                     <div class="col-sm-8">
-                                        <asp:TextBox ID="txtEndDate" runat="server" TextMode="Date" CssClass="form-control form-control-sm"></asp:TextBox>
+                                        <asp:TextBox ID="txtEndDate" runat="server" CssClass="form-control form-control-sm"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionValidatorEndDate" runat="server" ErrorMessage="Need to be in date format" ClientIDMode="Inherit" ControlToValidate="txtEndDate" Display="Dynamic" ValidationExpression="^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$" CssClass="text-danger"></asp:RegularExpressionValidator>
                                     </div>
                                 </div>
                                 <div class="d-flex mt-3">
-                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnAddEmployee_Click" CssClass="btn btn-primary btn-block mr-1" />
-                                    <asp:Button ID="btnViewPersonnel" runat="server" Text="View Personnel" CssClass="btn btn-info mr-1 ml-1" PostBackUrl="~/frmViewPersonnel.aspx" />
-                                    <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="btn btn-danger btn-block mt-0 ml-1" PostBackUrl="~/frmMain.aspx" />                                </div>
+                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnAddEmployee_Click" CssClass="btn btn-primary btn-block" />                              </div>
                             </asp:Panel>
                         </div>
                     </form>

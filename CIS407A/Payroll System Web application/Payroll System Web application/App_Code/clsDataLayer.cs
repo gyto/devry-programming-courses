@@ -13,6 +13,32 @@ public class clsDataLayer
 {
     public clsDataLayer() {}
 
+    // This function verifies a user in the tblUser Table
+    public static dsUser VerifyUser(string Database, string UserName, string UserPassword)
+    {
+        // Create connection to the User Table
+        dsUser DS;
+        OleDbConnection sqlConn;
+        OleDbDataAdapter sqlDA;
+
+        // Connect to the Access file
+        sqlConn = new OleDbConnection("PROVIDER=Microsoft.ACE.OLEDB.12.0;" + "Data Source=" + Database);
+
+        // Select fields from table
+        sqlDA = new OleDbDataAdapter("Select SecurityLevel from tblUserLogin " +
+           "where UserName like '" + UserName + "' " +
+           "and UserPassword like '" + UserPassword + "'", sqlConn);
+
+        // Initiate the datase object
+        DS = new dsUser();
+
+        // Fill the imported information
+        sqlDA.Fill(DS.tblUserLogin);
+
+        // Return the table
+        return DS;
+    }
+
     // Function gets the user activuty from the tblUserActivity
     public static dsUserActivity GetUserActivity(string Database)
     {
@@ -127,6 +153,8 @@ public class clsDataLayer
     public static bool SavePersonnel(string Database, string FIrstName, string LastName, string PayRate, string StartDate, string EndDate)
     {
         bool recordSaved;
+        // set the Transaction to be null
+        OleDbTransaction myTransaction = null;
         try
         {
             // Connect to the database records
@@ -135,19 +163,79 @@ public class clsDataLayer
             OleDbCommand command = conn.CreateCommand();
             string strSQL;
 
-            // Add created records to the table row
+            // check the Transcaction connection
+            myTransaction = conn.BeginTransaction();
+            command.Transaction = myTransaction;
+
+            // Create records to the table row for First and Last Name
             strSQL = "Insert into tblPersonnel " +
-                "(FirstName, LastName, PayRate, StartDate, EndDate) values ('" +
+                "(FirstName, LastName) values ('" +
                 FIrstName +
                 "', '" +
                 LastName +
-                "', " +
-                PayRate +
-                ", '" +
-                StartDate +
-                "', '" +
-                EndDate +
                 "')";
+
+            // Convert command type
+            command.CommandType = CommandType.Text;
+            command.CommandText = strSQL;
+
+            // Execute non query function
+            command.ExecuteNonQuery();
+
+            // Update records to the table row for First and Last Name
+            strSQL = "Update tblPersonnel " +
+                "Set PayRate=" + PayRate + ", " +
+                "StartDate='" + StartDate + "', " +
+                "EndDate='" + EndDate + "' " +
+                "Where ID=(Select Max(ID) From tblPersonnel)";
+
+            // Convert Command type
+            command.CommandType = CommandType.Text;
+            command.CommandText = strSQL;
+
+            // Execute non query function
+            command.ExecuteNonQuery();
+
+            // Commit Transaction
+            myTransaction.Commit();
+
+            // Close connection
+            conn.Close();
+            recordSaved = true;
+        } catch (Exception ex)
+        {
+            // Rollback the Transcation if fails
+            myTransaction.Rollback();
+
+            recordSaved = false;
+        }
+
+        return recordSaved;
+    }
+
+    public static bool SaveUser(string Database, string usrName, string usrPass, string usrLvl)
+    {
+        bool userSaved;
+        // set the Transaction to be null
+        OleDbTransaction myTransaction = null;
+        try
+        {
+            // Connect to the database records
+            OleDbConnection conn = new OleDbConnection("PROVIDER=Microsoft.ACE.OLEDB.12.0;" + "Data Source=" + Database);
+            conn.Open();
+            OleDbCommand command = conn.CreateCommand();
+            string strSQL;
+
+            // check the Transcaction connection
+            myTransaction = conn.BeginTransaction();
+            command.Transaction = myTransaction;
+
+            // Create records to the table row for First and Last Name
+            strSQL = "Insert into tblUserLogin " +
+                "(UserName, UserPassword, SecurityLevel) values ('" +
+                usrName + "', '" +
+                usrPass + "', '" +
+                usrLvl + "')";
 
             // Convert command type
             command.CommandType = CommandType.Text;
@@ -158,12 +246,14 @@ public class clsDataLayer
 
             // Close connection
             conn.Close();
-            recordSaved = true;
-        } catch (Exception ex)
-        {
-            recordSaved = false;
+            userSaved = true;
+        }
+       catch (Exception ex)
+       {
+
+            userSaved = false;
         }
 
-        return recordSaved;
+        return userSaved;
     }
 }

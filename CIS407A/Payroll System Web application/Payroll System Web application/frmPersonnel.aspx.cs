@@ -9,7 +9,16 @@ public partial class frmPersonnel : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        // Check what security level User have
+        if (Session["SecurityLevel"] == "A")
+        {
+            btnSubmit.Visible = true;
+        }
+        // Hide the button if the access is not Admin
+        else
+        {
+            btnSubmit.Visible = false;
+        }
     }
 
     // Handle the event when user click on the button to create new employee
