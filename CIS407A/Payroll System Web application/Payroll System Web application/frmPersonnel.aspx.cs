@@ -14,6 +14,10 @@ public partial class frmPersonnel : System.Web.UI.Page
         {
             btnSubmit.Visible = true;
         }
+        else if((Session["SecurityLevel"] != "A"))
+        {
+            Response.Redirect("frmLogin.aspx");
+        }
         // Hide the button if the access is not Admin
         else
         {

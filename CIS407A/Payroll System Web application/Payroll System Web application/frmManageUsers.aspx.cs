@@ -9,28 +9,23 @@ public partial class frmManageUsers : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        // Check if the Admin is present
+        if (Session["SecurityLevel"] != "A")
+        {
+            Response.Redirect("frmLogin.aspx");
+        }
     }
 
     protected void btnAddUser_click(object sender, EventArgs e)
     {
-        //create sessions
-        Session["txtUserName"] = txtUserName.Text; 
-        Session["txtUserPassword"] = txtPassword.Text; 
-        Session["txtSecurityLevel"] = ddlSecurityLevel.SelectedValue;
-
         //Saves the User Login data to the database
-        if (clsDataLayer.SaveUser(Server.MapPath("PayrollSystem_DB.accdb"), Session["txtUserName"].ToString(), Session["txtUserPassword"].ToString(), Session["txtSecurityLevel"].ToString()))
+        if (clsDataLayer.SaveUser(Server.MapPath("PayrollSystem_DB.accdb"), txtUserName.Text, txtPassword.Text, ddlSecurityLevel.SelectedValue))
         {
-            txtUserName.Text = "";
-            txtPassword.Text = "";
             lblError.Text = "The user was successfully added!";
             grdUsers.DataBind();
         }
         else
         {
-            txtUserName.Text = "";
-            txtPassword.Text = "";
             lblError.Text = "The user was not added!";
         }
     }

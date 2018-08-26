@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -27,6 +28,22 @@ public partial class frmLogin : System.Web.UI.Page
         if(dsUserLogin.tblUserLogin.Count < 1)
         {
             e.Authenticated = false;
+
+            // Sent email to the recipient and notify that there was an error in the login
+            if (clsBusinessLayer.SendEmail(
+                "gyto23@gmail.com", 
+                "gytoinc@gmail.com", 
+                "", 
+                "", 
+                "Login Incorrect", 
+                "The login failed for UserName: " + Login1.UserName + 
+                " Password: " + Login1.Password
+                ))
+            {
+                Login1.FailureText = Login1.FailureText +
+                " Your incorrect login information was sent to receiver@receiverdomain.com";
+            }
+
             return;
         }
 
@@ -39,11 +56,13 @@ public partial class frmLogin : System.Web.UI.Page
             case "A":
                 // if the access true then give Admin Access
                 e.Authenticated = true;
+                FormsAuthentication.RedirectFromLoginPage(Login1.UserName, false);
                 Session["SecurityLevel"] = "A";
                 break;
             case "U":
                 // If the access true tehn give User Access
                 e.Authenticated = true;
+                FormsAuthentication.RedirectFromLoginPage(Login1.UserName, false);
                 Session["SecurityLevel"] = "U";
                 break;
             default:

@@ -9,7 +9,11 @@ public partial class frmEditPersonnel : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
- 
+        // Check if the Admin is present
+        if (Session["SecurityLevel"] != "A")
+        {
+            Response.Redirect("frmLogin.aspx");
+        }
     }
 
     protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)

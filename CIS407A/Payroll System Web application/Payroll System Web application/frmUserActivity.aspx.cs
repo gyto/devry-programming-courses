@@ -9,7 +9,13 @@ public partial class frmUserActivity : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if(!Page.IsPostBack)
+        // Check if the Admin is present
+        if (Session["SecurityLevel"] != "A")
+        {
+            Response.Redirect("frmLogin.aspx");
+        }
+
+        if (!Page.IsPostBack)
         {
             // Define the DataSet
             dsUserActivity myDataSet = new dsUserActivity();

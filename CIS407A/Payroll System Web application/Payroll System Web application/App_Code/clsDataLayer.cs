@@ -218,8 +218,8 @@ public class clsDataLayer
         bool userSaved;
         // set the Transaction to be null
         OleDbTransaction myTransaction = null;
-        try
-        {
+        //try
+        //{
             // Connect to the database records
             OleDbConnection conn = new OleDbConnection("PROVIDER=Microsoft.ACE.OLEDB.12.0;" + "Data Source=" + Database);
             conn.Open();
@@ -247,12 +247,12 @@ public class clsDataLayer
             // Close connection
             conn.Close();
             userSaved = true;
-        }
-       catch (Exception ex)
-       {
+      //  }
+      // catch (Exception ex)
+      // {
 
-            userSaved = false;
-        }
+      //      userSaved = false;
+        //}
 
         return userSaved;
     }

@@ -18,9 +18,9 @@
                     <div class="d-flex justify-content-center">
                        <asp:ImageButton ID="Image1" runat="server" ImageAlign="Middle" ImageUrl="~/Images/CIS407A_iLab_ACITLogo.jpg" CssClass="img-fluid" />
                     </div>
-
-                    <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/frmMain.aspx" TitleText="Please enter your UserName and Password in order to log in to the system." CheckBoxStyle-CssClass="form-check" LoginButtonStyle-CssClass="btn btn-primary" TextBoxStyle-CssClass="form-control" OnAuthenticate="Login1_Authenticate"></asp:Login>
-
+                    <div class="d-flex justify-content-center">
+                        <asp:Login ID="Login1" runat="server" DestinationPageUrl="~/frmMain.aspx" TitleText="Please enter your UserName and Password in order to log in to the system." LoginButtonStyle-CssClass="btn btn-primary btn-block" TextBoxStyle-CssClass="form-control" OnAuthenticate="Login1_Authenticate" PasswordLabelText="Password: " LoginButtonText="Log In" UserNameLabelText="User Name: " LabelStyle-CssClass="pr-3"></asp:Login>
+                    </div>
                 </form>
             </div>
         </div>

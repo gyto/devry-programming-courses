@@ -52,19 +52,17 @@
                                 <div class="form-group row mb-1">
                                     <asp:Label ID="startDate" runat="server" Text="Start Date:" CssClass="col-sm-4 col-form-label col-form-label-sm"></asp:Label>
                                     <div class="col-sm-8">
-                                        <asp:TextBox ID="txtStartDate" runat="server" CssClass="form-control form-control-sm"></asp:TextBox>
-                                        <asp:RegularExpressionValidator ID="RegularExpressionValidatorStartDate" runat="server" ErrorMessage="Need to be in date format" ClientIDMode="Inherit" ControlToValidate="txtStartDate" Display="Dynamic" ValidationExpression="^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$" CssClass="text-danger"></asp:RegularExpressionValidator>
+                                        <asp:TextBox ID="txtStartDate" runat="server" CssClass="form-control form-control-sm" TextMode="Date"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-1">
                                     <asp:Label ID="endDate" runat="server" Text="End Date:" CssClass="col-sm-4 col-form-label col-form-label-sm"></asp:Label>
                                     <div class="col-sm-8">
-                                        <asp:TextBox ID="txtEndDate" runat="server" CssClass="form-control form-control-sm"></asp:TextBox>
-                                        <asp:RegularExpressionValidator ID="RegularExpressionValidatorEndDate" runat="server" ErrorMessage="Need to be in date format" ClientIDMode="Inherit" ControlToValidate="txtEndDate" Display="Dynamic" ValidationExpression="^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$" CssClass="text-danger"></asp:RegularExpressionValidator>
+                                        <asp:TextBox ID="txtEndDate" runat="server" CssClass="form-control form-control-sm" TextMode="Date"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="d-flex mt-3">
-                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnAddEmployee_Click" CssClass="btn btn-primary btn-block" />                              </div>
+                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnAddEmployee_Click" CssClass="btn btn-primary btn-block" /></div>
                             </asp:Panel>
                         </div>
                     </form>
