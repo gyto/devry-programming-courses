@@ -50,6 +50,15 @@ public class Invoice_GUI extends JFrame {
             7.  JButton to calculate the cost (name: btnCalculate
             8.  Add a CalculateHandler handler object to the btnCalculate addActionListener
         */
+        
+        super.add(new JLabel("Product name"));
+//        txtProductName.setText("");
+        super.add(new JLabel("Product Quantity (1 to 1000)"));
+        super.add(new JLabel("Item cost (10 to 10000)"));
+        super.add(new JLabel("Total cost"));
+       
+        
+        
     }
     private void setFrame() {
         Dimension windowSize = new Dimension(WINDOW_WIDTH, WINDOW_HEIGHT); 
