@@ -52,11 +52,16 @@ public class Invoice_GUI extends JFrame {
         */
         
         super.add(new JLabel("Product name"));
-//        txtProductName.setText("");
+        super.add(txtProductName = new JTextField());
         super.add(new JLabel("Product Quantity (1 to 1000)"));
+        super.add(txtQuantity = new JTextField());
         super.add(new JLabel("Item cost (10 to 10000)"));
+        super.add(txtCostPerItem = new JTextField());
         super.add(new JLabel("Total cost"));
-       
+        super.add(txtTotalCost = new JTextArea());
+        super.add(btnCalculate = new JButton("Calculate"));
+        
+        btnCalculate.addActionListener(new CalculateHandler());
         
         
     }
@@ -100,6 +105,7 @@ public class Invoice_GUI extends JFrame {
                 try {
                     double cost = 0;
                     //TODO: write the state to extract the double value from the txtCost field
+                    cost = Double.parseDouble((txtCostPerItem.getText()));
                     aInvoice.setPricePerItem(cost);
                 }
                 catch (NumberFormatException ex) {
@@ -114,6 +120,7 @@ public class Invoice_GUI extends JFrame {
             }
             if (valid) {
                 //TODO:  using the toString method of the invoice object to set the output text
+                txtTotalCost.setText(aInvoice.toString());
             }
         }
     }
