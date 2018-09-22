@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Web460Store.master.cs" Inherits="Web460Store" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>WEB460 Book Store</title>
+    <asp:ContentPlaceHolder id="HeadPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <style>
+        form { width: 100%; }
+        .alert { display: block; text-align: center; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form id="form1" runat="server">
+            <div class="col-12 col-md-6 offset-md-3">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-book fa-4x mr-3"></i>
+                    <div>
+                        <h1>WEB 460 Book Store</h1>
+                        <h5>Providing you 100% more than 360 degrees</h5>
+                    </div>
+                </div>
+                
+                <!-- Alert Label -->
+                <asp:Label ID="lblUserFeedBack" Runat="server" CssClass="alert alert-info">Welcome Traveler!</asp:Label>
+                
+                <!-- FIRST placeholder -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" Runat="server"></asp:ContentPlaceHolder>
+                <!-- SECOND placeholder -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2"  Runat="server"></asp:ContentPlaceHolder>
+                <!-- footer -->
+                
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="bg-primary text-white pt-4 pb-4 text-center mt-5">
+   <p class="mb-0">Copyright DeVry University<br />User's GUID:  <asp:Label ID="lblGUID" Runat="server" /></p>
+</footer>
+</body>
+</html>

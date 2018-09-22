@@ -30,7 +30,7 @@ public class Invoice_GUI extends JFrame {
     private JTextField txtQuantity;
     private JTextField txtCostPerItem;
     private  JTextArea txtTotalCost;
-    
+
     public Invoice_GUI() {
         super();
         createPanel();
@@ -53,6 +53,7 @@ public class Invoice_GUI extends JFrame {
         
         super.add(new JLabel("Product name"));
 //        txtProductName.setText("");
+        txtProductName.setText("");
         super.add(new JLabel("Product Quantity (1 to 1000)"));
         super.add(new JLabel("Item cost (10 to 10000)"));
         super.add(new JLabel("Total cost"));
