@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Web460Store.master.cs" Inherits="Web460Store" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>WEB460 Book Store</title>
+    <asp:ContentPlaceHolder id="HeadPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <style>
+        form { width: 100%; }
+        .alert { display: block; text-align: center; }
+        .rainbowBook { 
+            color: #000000;
+            animation: rainbowBook 3s infinite;
+        }
+        @keyframes rainbowBook {
+            0% { color: #AA2929;}
+            20% {color: #DD6F25;}
+            40% {color: #DDB925;}
+            60% {color: #396B21;}
+            80% {color: #01828C;}
+            100% { color: #AA2929;}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form id="form1" runat="server">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div class="d-flex align-items-center flex-column flex-sm-row mt-2">
+                    <i class="fas fa-book fa-4x mr-3 rainbowBook"></i>
+                    <div>
+                        <h1 class="text-center text-sm-left mb-1 mb-sm-0">WEB 460 Book Store</h1>
+                        <h5 class="text-center text-sm-left">Providing you 100% more than 360 degrees</h5>
+                    </div>
+                </div>
+                
+                <!-- Alert Label -->
+                <asp:Label ID="lblUserFeedBack" Runat="server" CssClass="alert alert-info">Welcome Traveler!</asp:Label>
+                
+                <!-- FIRST placeholder -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" Runat="server"></asp:ContentPlaceHolder>
+                <!-- SECOND placeholder -->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2"  Runat="server"></asp:ContentPlaceHolder>
+                <!-- footer -->
+                
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="bg-primary text-white pt-4 pb-4 text-center mt-5">
+   <p class="mb-0">Copyright DeVry University<br />User's GUID:  <asp:Label ID="lblGUID" Runat="server" /></p>
+</footer>
+</body>
+</html>

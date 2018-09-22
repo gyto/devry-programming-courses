@@ -17,8 +17,8 @@
     </style>
 </asp:Content>
 
-<!-- User Information -->
 <asp:Content ID="ContentArea1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!-- User Information -->
     <div class="border rounded">
         <div class="bg-light p-2">
             <h3 class="mb-0">User Information</h3>
@@ -62,8 +62,8 @@
     </div>
 </asp:Content>
 
-<!-- Payment Method -->
 <asp:Content ID="ContentArea2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <!-- Payment Method -->
     <div class="border rounded mt-3">
         <div class="bg-light p-2">
             <h3 class="mb-0">Payment Method</h3>

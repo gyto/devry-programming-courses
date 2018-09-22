@@ -2,8 +2,9 @@
 <%@ PreviousPageType VirtualPath="~/pgCheckOut.aspx" %>
 <%@ MasterType VirtualPath="~/Web460Store.master" %>
 
-<!-- Order Confirmation -->
+
 <asp:Content ID="ContentArea1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!-- Order Confirmation -->
     <div class="border rounded">
         <div class="bg-light p-2">
             <h3 class="mb-0">Order Confirmation</h3>
@@ -18,8 +19,9 @@
     </div> 
 </asp:Content>
 
-<!-- Credit Card Information -->
+
 <asp:Content ID="ContentArea2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <!-- Credit Card Information -->
     <div class="border rounded mt-2">
         <div class="p-2">
             <ul class="list-group">
@@ -28,5 +30,5 @@
             </ul>
         </div>
     </div>
-    <asp:Button ID="btnSubmit" runat="server" Text="Submit Order" CssClass="btn btn-primary mt-3" OnClick="btnSubmit_Click" />
+    <asp:Button ID="btnSubmit" runat="server" Text="Submit Order" CssClass="btn btn-primary mt-3" OnClick="BtnSubmit_Click" />
 </asp:Content>
