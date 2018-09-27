@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="yes"?>
+<dsAccounts xmlns="http://tempuri.org/dsAccounts.xsd">
+  <tblCustomers>
+    <CustomerID>1</CustomerID>
+    <FirstName>John</FirstName>
+    <LastName>Smith</LastName>
+    <Email>john@smith.com</Email>
+    <Address1>25 Smith St</Address1>
+    <City>Smithville</City>
+    <Address2 />
+    <State>SD</State>
+    <PhoneNumber>1112223333</PhoneNumber>
+  </tblCustomers>
+  <tblCustomers>
+    <CustomerID>2</CustomerID>
+    <FirstName>Jane</FirstName>
+    <LastName>Doe</LastName>
+    <Email>jane@doe.com</Email>
+    <Address1>5909B Main St</Address1>
+    <City>Forrestville</City>
+    <State>MI</State>
+    <PhoneNumber>5554443333</PhoneNumber>
+  </tblCustomers>
+  <tblCustomers>
+    <CustomerID>3</CustomerID>
+    <FirstName>Harold</FirstName>
+    <LastName>Rice</LastName>
+    <Email>harold@rice.com</Email>
+    <Address1>123 Jackson Blvd</Address1>
+    <City>Johnstown</City>
+    <Address2>Apt B</Address2>
+    <State>PA</State>
+    <PhoneNumber>9998887777</PhoneNumber>
+  </tblCustomers>
+  <tblCustomers>
+    <CustomerID>4</CustomerID>
+    <FirstName>Mary</FirstName>
+    <LastName>Sue</LastName>
+    <Email>mary@sue.com</Email>
+    <Address1>1101 Laurel Hill Ave</Address1>
+    <City>Widgeton</City>
+    <Address2>Suite 204</Address2>
+    <State>VT</State>
+    <PhoneNumber>7776665555</PhoneNumber>
+  </tblCustomers>
+  <tblCustomers>
+    <CustomerID>5</CustomerID>
+    <FirstName>Yana</FirstName>
+    <LastName>Lysyshyn</LastName>
+    <Address1>750 N Salem Dr</Address1>
+    <City>Hoffman Estates</City>
+    <Address2>Apt 305</Address2>
+    <State>IL</State>
+    <PhoneNumber>2242416004</PhoneNumber>
+  </tblCustomers>
+  <tblCustomers>
+    <CustomerID>6</CustomerID>
+    <FirstName>Roman</FirstName>
+    <LastName>Kovtun</LastName>
+    <Address1>750 N Salem Dr</Address1>
+    <City>Albion</City>
+    <Address2>Apt 305</Address2>
+    <State>Illinois</State>
+    <PhoneNumber>2242416004</PhoneNumber>
+  </tblCustomers>
+  <tblCustomers>
+    <CustomerID>7</CustomerID>
+    <FirstName>Peter</FirstName>
+    <LastName>Parker</LastName>
+    <Address1>123 Spidy Road</Address1>
+    <City>New York</City>
+    <Address2 />
+    <State>NY</State>
+    <PhoneNumber>1231231234</PhoneNumber>
+  </tblCustomers>
+  <tblCustomers>
+    <CustomerID>8</CustomerID>
+    <FirstName>Mary</FirstName>
+    <LastName>Jane</LastName>
+    <Address1>123 Fake Address</Address1>
+    <City>Palatine</City>
+    <Address2 />
+    <State>IL</State>
+    <PhoneNumber>1231231234</PhoneNumber>
+  </tblCustomers>
+</dsAccounts>
