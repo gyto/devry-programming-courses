@@ -31,15 +31,59 @@ public class PizzaOrder {
     
     private PizzaSize pizzaSize;
     private double sizeCost;
-    private double totalCost = 0;
+    
+    private double total = 0;
+    private boolean overrideTotal = false;
     
     public PizzaOrder() {
         clearOrder();
     }
-    
+    public void setFirstName(String firstName){
+        customer.setFirstName(firstName); 
+    }
+    public String getFirstName() {
+        return customer.getFirstName();
+    }
+    public void setLastName(String lastName) {
+        customer.setLastName(lastName); 
+    }
+    public String getLastName() {
+        return customer.getLastName();
+    }
+    public String getFullName() {
+        return customer.getFullName();
+    }
+    public void setCheese(boolean selected) {
+        cheeseSelected = selected;
+    }
+    public Boolean getCheese() {
+        return cheeseSelected;
+    }
+    public void setSausage(boolean selected) {
+        sausageSelected = selected;
+    }
+    public Boolean getSausage() {
+        return sausageSelected;
+    }
+    public void setHam(boolean selected) {
+        hamSelected = selected;
+    }
+    public Boolean getHam() {
+        return hamSelected;
+    }
+    public void setTotal(double total) {
+        this.total = total;
+        overrideTotal = true;
+    }
+    public double getTotal() {
+        if (!overrideTotal) {
+            calculateTotalCost();
+        }
+        return total;
+    }
     public String getTotalCost() {
         calculateTotalCost();
-        return CF.format(totalCost);
+        return CF.format(total);
     }
     public void setPizzaSize(PizzaSize size) {
          pizzaSize = size;
@@ -63,7 +107,7 @@ public class PizzaOrder {
         return str;
     }
     private void calculateTotalCost() {
-        totalCost = 0;
+        total = 0;
         switch (pizzaSize) {
              case Small:
                  sizeCost = SMALL_PRICE;
@@ -78,31 +122,30 @@ public class PizzaOrder {
                 sizeCost = LARGE_PRICE;
                 break; 
          }
-        totalCost = sizeCost;
+        total = sizeCost;
         if (cheeseSelected) {
-            totalCost += CHEESE_COST;
+            total += CHEESE_COST;
         }
         if (sausageSelected) {
-             totalCost += SAUSAGE_COST;
+             total += SAUSAGE_COST;
         }
         if (hamSelected) {
-            totalCost += HAM_COST;
+            total += HAM_COST;
         }
     }
-    public void setFirstName(String firstName){
-        customer.firstName = firstName;
-    }
-    public void setLastName(String lastName) {
-        customer.lastName = lastName;
-    }
-    public void setCheese(boolean selected) {
-        cheeseSelected = selected;
-    }
-    public void setSausage(boolean selected) {
-        sausageSelected = selected;
-    }
-    public void setHam(boolean selected) {
-        hamSelected = selected;
+    public void setPizzaSize(String size) {
+        if(size.compareToIgnoreCase("small") == 0) {
+            pizzaSize = PizzaSize.Small;
+        }
+        else if (size.compareToIgnoreCase("medium") == 0) {
+            pizzaSize = PizzaSize.Medium;
+        }
+        else if (size.compareToIgnoreCase("large") == 0) {
+            pizzaSize = PizzaSize.Large;
+        }
+        else {
+            pizzaSize = PizzaSize.Large;
+        }
     }
     public void clearOrder() {
         setPizzaSize(PizzaSize.Large);
@@ -112,7 +155,7 @@ public class PizzaOrder {
     }
     public String getOrderInformation() {
         StringBuilder str = new StringBuilder();
-        
+        getTotal();
         str.append("Pizza order for:\n");
         str.append(customer.getFullName());
        
@@ -133,7 +176,7 @@ public class PizzaOrder {
         str.append(": ");
         str.append(CF.format(sizeCost));
         str.append("\nTotal: ");
-        str.append(getTotalCost());
+        str.append(CF.format(total));
         return str.toString();
     }
     @Override
