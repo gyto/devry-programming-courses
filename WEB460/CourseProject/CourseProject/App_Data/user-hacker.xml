@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<dsCourses xmlns="http://tempuri.org/dsCourses.xsd">
+  <tblCourses>
+    <ID>2</ID>
+    <courseName>WEB460</courseName>
+    <courseLanguage>ASP.NET</courseLanguage>
+    <courseDate>2018-09-05T00:00:00-05:00</courseDate>
+    <userID>2</userID>
+  </tblCourses>
+</dsCourses>
