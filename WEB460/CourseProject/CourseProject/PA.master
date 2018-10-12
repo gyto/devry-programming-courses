@@ -11,10 +11,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
         header {
             display:flex;
             justify-content: space-between;
@@ -22,9 +18,7 @@
         }
         .wrapper {
             width: 100%;
-            min-height: 100%;
-            margin-bottom: -100px;
-            height: 100vh;
+            min-height: calc(100vh - 100px);
             background: rgb(255,255,255);
             background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(1,117,216,1) 100%);
         }
@@ -41,12 +35,12 @@
     <div class="wrapper">
         <div class="container-fluid">
             <header>
-                <h5 class="text-white" title="Programaholics Anonymous Logo">Programaholics Anonymous</h5>
+                <asp:HyperLink ID="websiteLogo" runat="server" CssClass="text-white h5" NavigateUrl="~/AccountDetails.aspx">Programaholics Anonymous</asp:HyperLink>
             </header>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 offset-lg-3">
+                <div class="col-12 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
                     <div class="mt-5 mb-5">
                         <div class="card p-3">
                             <asp:Label ID="lblUserFeedBack" Runat="server" CssClass="alert alert-info d-none">Welcome Traveler!</asp:Label>

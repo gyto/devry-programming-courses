@@ -38,11 +38,22 @@
         <div class="col-sm-9"><asp:TextBox runat="server" ID="txtLeastFPL" cssClass="form-control"/></div>
     </div>
     <div>
-        <h2 class="text-center">An Applications Completed table</h2>
-        <p>Comming soon</p>
+        <h3 class="text-center">Completed Applications</h3>
+        <div class="table-responsive">
+            <asp:GridView ID="gvCourseList" Font-Size="12px" runat="server" CssClass="table table-hover table-bordered mb-0" AutoGenerateColumns="false">
+                <Columns>
+                    <asp:BoundField DataField="ID" HeaderText="ID"/>
+                    <asp:BoundField DataField="courseName" HeaderText="Name"/>
+                    <asp:BoundField DataField="courseLanguage" HeaderText="Language"/>
+                    <asp:BoundField DataField="courseDate" HeaderText="Date"/>
+                </Columns>
+            </asp:GridView>
+            <asp:GridView ID="gvXML" runat="server" CssClass="d-none table table-hover table-bordered mb-0"></asp:GridView>
+        </div>
     </div>
-    <div class="d-flex mt-4">
+    <asp:Button Text="Export Stats" runat="server" ID="btnExportXML" CssClass="d-none" OnClick="BtnExportToXML_Click" />
+    <div class="d-flex mt-2">
         <asp:Button Text="Delete Account" runat="server" ID="btnDelete" CssClass="d-none" OnClick="BtnDeleteAccount_Click" />
-        <asp:Button Text="Update Account Information " runat="server" CssClass="btn btn-primary btn-block mt-0 ml-1" onClick="BtnUpdateInformation_Click"/>
+        <asp:Button Text="Update Account Information" ID="btnUpdateAccount" runat="server" CssClass="btn btn-primary btn-block mt-0" onClick="BtnUpdateInformation_Click"/>
     </div>
 </asp:Content>

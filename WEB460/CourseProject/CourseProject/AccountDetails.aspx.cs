@@ -7,7 +7,20 @@ using System.Web.UI.WebControls;
 
 public partial class AccountDetails : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e) {}
+    // Create a class to Business layer
+    clsBusinessLayer myBusinessLayer;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // Create a path to APP DATA
+        myBusinessLayer = new clsBusinessLayer(Server.MapPath("~/App_Data/"));
+
+        // Bind Courses GridView
+        BindCoursesGridView();
+
+        // Bind XML GridView
+        //BindXMLGridView();
+    }
 
 
     // On click save the fields content to session and redirect to the next page
@@ -49,12 +62,20 @@ public partial class AccountDetails : System.Web.UI.Page
                 txtLeastFPL.Text = dsUserName.tblAccountInfo[0].leastLanguage;
 
                 userID.Attributes.Add("class", "input-group-append d-flex");
-                lblUserID.Text = dsUserName.tblAccountInfo[0].ID.ToString();
+                lblUserID.Text = dsUserName.tblAccountInfo[0].userID.ToString();
 
                 btnDelete.CssClass = "btn btn-danger btn-block mr-1";
+                btnUpdateAccount.CssClass = "btn btn-primary btn-block mt-0 ml-1";
+                btnExportXML.CssClass = "btn btn-secondary btn-block mt-4";
 
                 Master.UserFeedback.Text = "Record is Found!";
                 Master.UserFeedback.CssClass = "alert alert-success d-block";
+
+                // Bind the User Grid Information
+                BindCoursesGridView();
+
+                // Bind XML GridView
+                BindXMLGridView();
             }
             else
             {
@@ -101,4 +122,43 @@ public partial class AccountDetails : System.Web.UI.Page
             Master.UserFeedback.CssClass = "alert alert-danger d-block";
         }
     }
+
+    private dsCourses BindCoursesGridView()
+    {
+        // Find a db file
+        string tempPath = Server.MapPath("~/App_Data/ProgramaholicsAnonymous.mdb");
+        clsDataLayer myDataLayer = new clsDataLayer(tempPath);
+
+        // Call the class and bind it to the customer listing
+        dsCourses userCourses = myBusinessLayer.SelectAllCourses(Convert.ToInt32(lblUserID.Text));
+
+        // Bind to the GridView
+        gvCourseList.DataSource = userCourses.tblCourses;
+
+        //Bind the data
+        gvCourseList.DataBind();
+        Cache.Insert("CoursesDataSet", userCourses);
+
+        return userCourses;
+    }
+
+    public void BtnExportToXML_Click(object sender, EventArgs e)
+    {
+        // Bind data from a click
+        gvXML.DataSource = myBusinessLayer.WriteUserXMLFile(Cache, txtUser.Text);
+        gvXML.DataBind();
+
+        // Let user know that it was bind
+        Master.UserFeedback.Text = "Successfully Update XML file";
+        Master.UserFeedback.CssClass = "alert alert-success";
+    }
+
+
+    public void BindXMLGridView()
+    {
+        // Bind to the GridView
+        gvXML.DataSource = myBusinessLayer.GetUserXMLFile(Convert.ToInt32(lblUserID.Text), txtUser.Text);
+        gvXML.DataBind();
+    }
+
 }
