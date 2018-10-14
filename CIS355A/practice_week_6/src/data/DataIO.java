@@ -10,10 +10,10 @@ import business.*;
 import javax.swing.JOptionPane;
 
 public class DataIO {
-   private final String CONNECTION_STRING = "jdbc:mysql://devry.edupe.net:4300/CIS355A_####";  //TODO: put in your user name
+   private final String CONNECTION_STRING = "jdbc:mysql://devry.edupe.net:4300/CIS355A_Kovtun";  //TODO: put in your user name
     private final String ORDER_TABLE = "PizzaOrder";
-    private final String USER_NAME = "####";  //TODO: put in your user name
-    private final String PASSWORD = "***********";  //TODO: put in your password
+    private final String USER_NAME = "4017";  //TODO: put in your user name
+    private final String PASSWORD = "76HKcUIAfG";  //TODO: put in your password
     
     private final DBConnect dbConnect;
     
@@ -35,6 +35,14 @@ public class DataIO {
                 
                 statement = dbConnect.getConnection().prepareStatement(sqlStr.toString(), Statement.RETURN_GENERATED_KEYS);
                //TODO:  add the code to insert a pizza order into the database
+               
+                statement.setString(1, aOrder.getFirstName());
+                statement.setString(2, aOrder.getLastName());
+                statement.setString(3, aOrder.getPizzaSize());
+                statement.setBoolean(4, aOrder.getCheese());
+                statement.setBoolean(5, aOrder.getSausage());
+                statement.setBoolean(6, aOrder.getHam());
+                statement.setDouble(7, aOrder.getTotal());
 
                 rowCount = statement.executeUpdate();
                 if (rowCount == 1) {
@@ -70,6 +78,7 @@ public class DataIO {
         if(aOrder != null && dbConnect != null && dbConnect.isConnected()){
             try {
                 //TODO:  create the SQL statement to delete a record from the database with a given id
+                sqlStr.append("DELETE FROM " + ORDER_TABLE + " WHERE id = ?");
                                
                 statement = dbConnect.getConnection().prepareStatement(sqlStr.toString());
                 statement.setInt(1, aOrder.getId());
@@ -103,6 +112,15 @@ public class DataIO {
         if(aOrder != null && dbConnect != null && dbConnect.isConnected()) {
             try {
                 //TODO create the SQL and prepared statements to update an order in the database
+                sqlStr.append("UPDATE ");
+                sqlStr.append(ORDER_TABLE);
+                sqlStr.append(" SET total = ?");
+                sqlStr.append(" WHERE id = ?");
+
+                statement = dbConnect.getConnection().prepareStatement(sqlStr.toString());
+                statement.setDouble(1, aOrder.getTotal());
+                statement.setInt(2, aOrder.getId());
+                
                 rowCount = statement.executeUpdate();
             }
             catch  (SQLException e) {
@@ -144,7 +162,13 @@ public class DataIO {
                 //4. set the ham selection
                 //5. set the total
                 //6. add the order to the array list
+                aOrder.setPizzaSize(rs.getString(4));
+                aOrder.setCheese(rs.getBoolean(5));
+                aOrder.setSausage(rs.getBoolean(6));
+                aOrder.setHam(rs.getBoolean(7));
+                aOrder.setTotal(rs.getDouble(8));
                 
+                list.add(aOrder);
             }
         }
         catch (SQLException ex) {
