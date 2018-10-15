@@ -15,11 +15,66 @@ public partial class AccountDetails : System.Web.UI.Page
         // Create a path to APP DATA
         myBusinessLayer = new clsBusinessLayer(Server.MapPath("~/App_Data/"));
 
-        // Bind Courses GridView
-        BindCoursesGridView();
+        // Check for the user after he/she login
+        dsAccountInfo dsUserName;
+        dsUser dsUserId;
+        dsCourses dsCourse;
 
-        // Bind XML GridView
-        //BindXMLGridView();
+        string tempPath = Server.MapPath("~/App_Data/ProgramaholicsAnonymous.mdb");
+        clsDataLayer dataLayerObj = new clsDataLayer(tempPath);
+        dsUserName = dataLayerObj.FindUser(Session["LoginUser"].ToString());
+
+        // hide button for new users
+        btnSaveAccount.Visible = false;
+
+
+        if (dsUserName.tblAccountInfo.Rows.Count > 0)
+        {
+            // fill out user information
+            lblWelcome.Text = dsUserName.tblAccountInfo[0].userName;
+            txtUser.Text = dsUserName.tblAccountInfo[0].userName;
+            txtCity.Text = dsUserName.tblAccountInfo[0].city;
+            txtState.Text = dsUserName.tblAccountInfo[0].state;
+            txtFPL.Text = dsUserName.tblAccountInfo[0].favLanguage;
+            txtLeastFPL.Text = dsUserName.tblAccountInfo[0].leastLanguage;
+
+            userID.Attributes.Add("class", "input-group-append d-flex");
+            lblUserID.Text = dsUserName.tblAccountInfo[0].userID.ToString();
+
+            btnDelete.CssClass = "btn btn-danger btn-block mr-1";
+            btnUpdateAccount.CssClass = "btn btn-primary btn-block mt-0 ml-1";
+            btnExportXML.CssClass = "btn btn-secondary btn-block mt-4";
+
+            // get all courses if they exist
+            dsCourse = dataLayerObj.GetAllCourses(Convert.ToInt32(lblUserID.Text));
+
+            // Bind Courses GridView
+            BindCoursesGridView();
+
+            // Do a check if the table is not empty for this user
+            if (dsCourse.tblCourses.Rows.Count > 0)
+            {
+                // Bind XML GridView
+                BindXMLGridView();
+            }
+        }
+        else
+        {
+            // find a user by ID
+            dsUserId = dataLayerObj.FindId(Session["LoginUser"].ToString());
+
+            userID.Attributes.Add("class", "input-group-append d-flex");
+            lblUserID.Text = dsUserId.tblUsers[0].ID.ToString();
+
+            // hide to update the account information and insert it for the new one
+            btnUpdateAccount.Visible = false;
+            btnSaveAccount.Visible = true;
+
+            // Get as much data as we can
+            lblWelcome.Text = Session["LoginUser"].ToString();
+            txtUser.Text = Session["LoginUser"].ToString();
+            Session["txtUser"] = Session["LoginUser"].ToString();
+        }
     }
 
 
@@ -40,6 +95,7 @@ public partial class AccountDetails : System.Web.UI.Page
     {
         // Connect to dsPA
         dsAccountInfo dsUserName;
+        dsCourses dsCourse;
 
         // Find a db file
         string tempPath = Server.MapPath("~/App_Data/ProgramaholicsAnonymous.mdb");
@@ -71,11 +127,17 @@ public partial class AccountDetails : System.Web.UI.Page
                 Master.UserFeedback.Text = "Record is Found!";
                 Master.UserFeedback.CssClass = "alert alert-success d-block";
 
+                dsCourse = dataLayerObj.GetAllCourses(Convert.ToInt32(lblUserID.Text));
+
                 // Bind the User Grid Information
                 BindCoursesGridView();
 
-                // Bind XML GridView
-                BindXMLGridView();
+                // Do a check if the table is not empty for this user
+                if (dsCourse.tblCourses.Rows.Count > 0)
+                {
+                    // Bind XML GridView
+                    BindXMLGridView();
+                }
             }
             else
             {
@@ -111,6 +173,8 @@ public partial class AccountDetails : System.Web.UI.Page
             txtLeastFPL.Text = "";
             lblUserID.Text = "0";
             txtFindUser.Text = "";
+
+            Response.Redirect("~/SignUp.aspx");
 
             Master.UserFeedback.Text = "User was Deleted from Database";
             Master.UserFeedback.CssClass = "alert alert-success d-block";
@@ -161,4 +225,16 @@ public partial class AccountDetails : System.Web.UI.Page
         gvXML.DataBind();
     }
 
+    protected void BtnSaveInformation_Click(object sender, EventArgs e)
+    {
+        // Find a db file
+        string tempPath = Server.MapPath("~/App_Data/ProgramaholicsAnonymous.mdb");
+        clsDataLayer myDataLayer = new clsDataLayer(tempPath);
+
+        //Save user and then find user
+
+        myDataLayer.SaveAccountInfo(txtCity.Text, txtState.Text, txtFPL.Text, txtLeastFPL.Text, Convert.ToInt32(lblUserID.Text));
+
+        Response.Redirect("~/AccountDetails.aspx");
+    }
 }

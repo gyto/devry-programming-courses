@@ -33,6 +33,20 @@ public class clsDataLayer
         return myStoreDataSet;
     }
 
+    public dsUser FindId(string userName)
+    {
+        // find a user by his ID
+        string sqlStmt = "SELECT * FROM tblUsers WHERE userName = '" + userName + "'";
+        OleDbDataAdapter sqlDataAdapter = new OleDbDataAdapter(sqlStmt, dbConnection);
+
+        // Create an Object of dsAccounts
+        dsUser myStoreDataSet = new dsUser();
+        sqlDataAdapter.Fill(myStoreDataSet.tblUsers);
+
+        // Return Data Set
+        return myStoreDataSet;
+    }
+
     public void UpdateAccountInfo(
         string state,
         string city,
@@ -61,6 +75,40 @@ public class clsDataLayer
         dbCommand.Parameters.Add(new OleDbParameter("@favLanguage", favLanguage));
         dbCommand.Parameters.Add(new OleDbParameter("@leastLanguage", leastLanguage));
         dbCommand.Parameters.Add(new OleDbParameter("@id", userID));
+
+        // Execute the query
+        dbCommand.ExecuteNonQuery();
+
+        // Close DB connection
+        dbConnection.Close();
+    }
+
+    public void SaveAccountInfo(
+        string state,
+        string city,
+        string favLanguage,
+        string leastLanguage,
+        int userID)
+    {
+        // Open DB connection
+        dbConnection.Open();
+
+        string sqlStmt =
+            "INSERT INTO tblAccountInfo " +
+            "(state, city, favLanguage, leastLanguage, userID)" +
+            "VALUES (@state, @city, @favLanguage, @leastLanguage, @userId)";
+
+        // Connect to db table
+        OleDbCommand dbCommand = new OleDbCommand(sqlStmt, dbConnection);
+
+        // Add param from sqlStatement
+        OleDbParameter param = new OleDbParameter("@state", state);
+        dbCommand.Parameters.Add(param);
+
+        dbCommand.Parameters.Add(new OleDbParameter("@city", city));
+        dbCommand.Parameters.Add(new OleDbParameter("@favLanguage", favLanguage));
+        dbCommand.Parameters.Add(new OleDbParameter("@leastLanguage", leastLanguage));
+        dbCommand.Parameters.Add(new OleDbParameter("@userId", userID));
 
         // Execute the query
         dbCommand.ExecuteNonQuery();
@@ -99,6 +147,20 @@ public class clsDataLayer
         dbConnection.Close();
     }
 
+    public void CreateUserAccount(string username, string password)
+    {
+        // Create user
+        dbConnection.Open();
+        string sqlStmt =
+            "INSERT INTO tblUsers (userName, [password]) VALUES (@username, @password)";
+
+        OleDbCommand dbCommand = new OleDbCommand(sqlStmt, dbConnection);
+        dbCommand.Parameters.Add(new OleDbParameter("@username", username));
+        dbCommand.Parameters.Add(new OleDbParameter("@password", password));
+        dbCommand.ExecuteNonQuery();
+        dbConnection.Close();
+    }
+
     public dsCourses GetAllCourses(int selectedUserID)
     {
         string sqlStmt = "SELECT * FROM tblCourses WHERE tblCourses.userID LIKE '" + selectedUserID + "'";
@@ -112,5 +174,54 @@ public class clsDataLayer
 
         // Return Data Set
         return myStoreDataSet;
+    }
+
+    public bool ValidateUser(string username, string passowrd)
+    {
+        // connect to the db
+        dbConnection.Open();
+
+        // string SQL command
+        string sqlStmt = "SELECT * FROM tblUsers WHERE userName = @username AND password = @password AND Locked = FALSE";
+
+        // connect to the command
+        OleDbCommand dbCommand = new OleDbCommand(sqlStmt, dbConnection);
+
+        // Retrive the parametrs
+        dbCommand.Parameters.Add(new OleDbParameter("@username", username));
+        dbCommand.Parameters.Add(new OleDbParameter("@password", passowrd));
+
+        // Execute the SQL command
+        OleDbDataReader dr = dbCommand.ExecuteReader();
+
+        // Assign the boolean and read the from db
+        Boolean isValidAccount = dr.Read();
+
+        // close the connection to db
+        dbConnection.Close();
+
+        return isValidAccount;
+    }
+
+    public void LockUserAccount(string username)
+    {
+        // connect to the db
+        dbConnection.Open();
+
+        // string SQL command
+        string sqlStmt = "UPDATE tblUsers SET Locked = TRUE WHERE userName = @username";
+
+        // connect to the command
+
+        OleDbCommand dbCommand = new OleDbCommand(sqlStmt, dbConnection);
+
+        // Retrive the parameters
+        dbCommand.Parameters.Add(new OleDbParameter("@username", username));
+
+        // Execute the SQL Command
+        dbCommand.ExecuteNonQuery();
+
+        // close the connection to db
+        dbConnection.Close();
     }
 }

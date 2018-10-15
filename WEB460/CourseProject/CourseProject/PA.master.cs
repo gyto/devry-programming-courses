@@ -12,6 +12,7 @@ public partial class PA : System.Web.UI.MasterPage
         if (!Page.IsPostBack)
         {
             lblGUID.Text = System.Guid.NewGuid().ToString();
+            // Set any user that come to the page as Guest
         }
     }
 

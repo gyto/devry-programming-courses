@@ -12,7 +12,7 @@
               <DbSource ConnectionRef="ProgramaholicsAnonymousConnectionString (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT        tblUsers.ID, tblUsers.userName, tblUsers.[password], tblAccountInfo.ID AS Expr1, tblAccountInfo.city, tblAccountInfo.state, tblAccountInfo.favLanguage, tblAccountInfo.leastLanguage, tblAccountInfo.userID
+                    <CommandText>SELECT        tblUsers.ID, tblUsers.userName, tblAccountInfo.ID AS Expr1, tblAccountInfo.city, tblAccountInfo.state, tblAccountInfo.favLanguage, tblAccountInfo.leastLanguage, tblAccountInfo.userID
 FROM            (tblUsers INNER JOIN
                          tblAccountInfo ON tblUsers.ID = tblAccountInfo.userID)</CommandText>
                     <Parameters />
@@ -29,7 +29,6 @@ FROM            (tblUsers INNER JOIN
               <Mapping SourceColumn="userID" DataSetColumn="userID" />
               <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
               <Mapping SourceColumn="userName" DataSetColumn="userName" />
-              <Mapping SourceColumn="password" DataSetColumn="password" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -41,7 +40,7 @@ FROM            (tblUsers INNER JOIN
   <xs:element name="dsAccountInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="dsAccountInfo" msprop:Generator_UserDSName="dsAccountInfo">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tblAccountInfo" msprop:Generator_TableClassName="tblAccountInfoDataTable" msprop:Generator_TableVarName="tabletblAccountInfo" msprop:Generator_TablePropName="tblAccountInfo" msprop:Generator_RowDeletingName="tblAccountInfoRowDeleting" msprop:Generator_RowChangingName="tblAccountInfoRowChanging" msprop:Generator_RowEvHandlerName="tblAccountInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="tblAccountInfoRowDeleted" msprop:Generator_UserTableName="tblAccountInfo" msprop:Generator_RowChangedName="tblAccountInfoRowChanged" msprop:Generator_RowEvArgName="tblAccountInfoRowChangeEvent" msprop:Generator_RowClassName="tblAccountInfoRow">
+        <xs:element name="tblAccountInfo" msprop:Generator_TableClassName="tblAccountInfoDataTable" msprop:Generator_TableVarName="tabletblAccountInfo" msprop:Generator_RowChangedName="tblAccountInfoRowChanged" msprop:Generator_TablePropName="tblAccountInfo" msprop:Generator_RowDeletingName="tblAccountInfoRowDeleting" msprop:Generator_RowChangingName="tblAccountInfoRowChanging" msprop:Generator_RowEvHandlerName="tblAccountInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="tblAccountInfoRowDeleted" msprop:Generator_RowClassName="tblAccountInfoRow" msprop:Generator_UserTableName="tblAccountInfo" msprop:Generator_RowEvArgName="tblAccountInfoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
@@ -76,13 +75,6 @@ FROM            (tblUsers INNER JOIN
               <xs:element name="userID" msprop:Generator_ColumnVarNameInTable="columnuserID" msprop:Generator_ColumnPropNameInRow="userID" msprop:Generator_ColumnPropNameInTable="userIDColumn" msprop:Generator_UserColumnName="userID" type="xs:int" minOccurs="0" />
               <xs:element name="Expr1" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:int" minOccurs="0" />
               <xs:element name="userName" msprop:Generator_ColumnVarNameInTable="columnuserName" msprop:Generator_ColumnPropNameInRow="userName" msprop:Generator_ColumnPropNameInTable="userNameColumn" msprop:Generator_UserColumnName="userName" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="536870910" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="password" msprop:Generator_ColumnVarNameInTable="columnpassword" msprop:Generator_ColumnPropNameInRow="password" msprop:Generator_ColumnPropNameInTable="passwordColumn" msprop:Generator_UserColumnName="password" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="536870910" />

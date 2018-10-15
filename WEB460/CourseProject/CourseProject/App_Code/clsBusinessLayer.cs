@@ -59,4 +59,30 @@ public class clsBusinessLayer
         // Return written file
         return xmlDataSet;
     }
+
+    public bool CheckUserCredentials(
+        System.Web.SessionState.HttpSessionState currentSession,
+        string username,
+        string password)
+    {
+        // Unlock the current session
+        currentSession["LockedSession"] = false;
+
+        // Initiate total Attemps
+        int totalAttemps = Convert.ToInt32(currentSession["AttemptCount"]) + 1;
+        currentSession["AttemptCount"] = totalAttemps;
+
+        // Initiate user Attemps
+        int userAttempts = Convert.ToInt32(currentSession[username]) + 1;
+        currentSession[username] = userAttempts;
+
+        // If user fails to procced
+        if ((userAttempts > 3) || (totalAttemps > 6))
+        {
+            currentSession["LockedSession"] = true;
+            myDataLayer.LockUserAccount(username);
+        }
+
+        return myDataLayer.ValidateUser(username, password);
+    }
 }

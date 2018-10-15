@@ -55,5 +55,6 @@
     <div class="d-flex mt-2">
         <asp:Button Text="Delete Account" runat="server" ID="btnDelete" CssClass="d-none" OnClick="BtnDeleteAccount_Click" />
         <asp:Button Text="Update Account Information" ID="btnUpdateAccount" runat="server" CssClass="btn btn-primary btn-block mt-0" onClick="BtnUpdateInformation_Click"/>
+        <asp:Button Text="Save Account Information" ID="btnSaveAccount" runat="server" CssClass="btn btn-success btn-block mt-0" onClick="BtnSaveInformation_Click"/>
     </div>
 </asp:Content>
