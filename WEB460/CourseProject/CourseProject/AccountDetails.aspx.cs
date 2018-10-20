@@ -27,7 +27,6 @@ public partial class AccountDetails : System.Web.UI.Page
         // hide button for new users
         btnSaveAccount.Visible = false;
 
-
         if (dsUserName.tblAccountInfo.Rows.Count > 0)
         {
             // fill out user information
@@ -76,7 +75,6 @@ public partial class AccountDetails : System.Web.UI.Page
             Session["txtUser"] = Session["LoginUser"].ToString();
         }
     }
-
 
     // On click save the fields content to session and redirect to the next page
     protected void BtnUpdateInformation_Click(object sender, EventArgs e)
@@ -143,6 +141,10 @@ public partial class AccountDetails : System.Web.UI.Page
             {
                 Master.UserFeedback.Text = "No records were Found!";
                 Master.UserFeedback.CssClass = "alert alert-danger d-block";
+
+                btnDelete.CssClass = "d-none";
+                btnUpdateAccount.CssClass = "d-none";
+                btnExportXML.CssClass = "d-none";
             }
         }
         catch (Exception error)

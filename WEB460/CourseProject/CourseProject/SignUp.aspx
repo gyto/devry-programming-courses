@@ -16,7 +16,7 @@
         </div>
     </div>
     <div class="d-flex justify-content-end">
-        <asp:Button ID="btnCreateAccount" Text="Create Account" runat="server" CssClass="btn btn-secondary mr-2" OnClick="BtnCreateAccount_Click" />
-        <asp:Button ID="btnLogin" Text="Login" runat="server" CssClass="btn btn-primary" OnClick="BtnLogin_Click" />
+        <asp:Button ID="btnCreateAccount" Text="Create Account" runat="server" CssClass="btn btn-secondary" OnClick="BtnCreateAccount_Click" />
+        <asp:Button ID="btnLogin" Text="Login" runat="server" CssClass="btn btn-primary ml-2" OnClick="BtnLogin_Click" />
     </div>
 </asp:Content>
