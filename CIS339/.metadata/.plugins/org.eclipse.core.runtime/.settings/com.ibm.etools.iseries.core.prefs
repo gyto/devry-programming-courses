@@ -1,0 +1,4 @@
+#Sat Nov 10 12:59:05 CST 2018
+eclipse.preferences.version=1
+com.ibm.etools.iseries.core.preferences.newdebugstartup=99
+com.ibm.etools.iseries.core.preferences.filterOutCompilerSrvpgms=99

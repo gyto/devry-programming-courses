@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryInfos>
+<libraryInfo home="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\xml.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51_stub\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre" version="1.5.0">
+<bootpath>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\vm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmpkcs.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmcfw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmjsseprovider2.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\xml.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61\java\jre\lib\ext"/>
+</extensionDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\xml.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\IBM\SDP70\jdk\jre" version="1.5.0">
+<bootpath>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\vm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\core.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\security.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmpkcs.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmcfw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjsseprovider2.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\server.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\xml.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ext"/>
+</extensionDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\xml.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v51\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\xml.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\express_v51\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre" version="1.5.0">
+<bootpath>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\vm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmpkcs.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmcfw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmjsseprovider2.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\xml.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v61_stub\java\jre\lib\ext"/>
+</extensionDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\xml.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\runtimes\base_v6_stub\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\IBM\SDP70\jdk" version="1.5.0">
+<bootpath>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\vm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\core.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\security.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmpkcs.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmcfw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjsseprovider2.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\server.jar"/>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\xml.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\IBM\SDP70\jdk\jre\lib\ext"/>
+</extensionDirs>
+</libraryInfo>
+</libraryInfos>

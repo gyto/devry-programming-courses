@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<dsCourses xmlns="http://tempuri.org/dsCourses.xsd">
+  <tblCourses>
+    <ID>34</ID>
+    <courseName>ICY</courseName>
+    <courseLanguage>Fig Advanced</courseLanguage>
+    <courseDate>2018-10-19T00:00:00-05:00</courseDate>
+    <userID>37</userID>
+  </tblCourses>
+  <tblCourses>
+    <ID>138</ID>
+    <courseName>TZU</courseName>
+    <courseLanguage>ProspectBase</courseLanguage>
+    <courseDate>2018-12-11T00:00:00-06:00</courseDate>
+    <userID>37</userID>
+  </tblCourses>
+</dsCourses>

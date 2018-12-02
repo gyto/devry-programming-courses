@@ -62,7 +62,7 @@ public class clsDataLayer
             "city = @city, " +
             "favLanguage = @favLanguage, " +
             "leastLanguage = @leastLanguage " +
-            "WHERE (tblAccountInfo.ID = @id)";
+            "WHERE (tblAccountInfo.userID = @id)";
 
         // Connect to db table
         OleDbCommand dbCommand = new OleDbCommand(sqlStmt, dbConnection);

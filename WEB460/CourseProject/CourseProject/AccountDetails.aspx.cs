@@ -12,67 +12,77 @@ public partial class AccountDetails : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        // Create a path to APP DATA
-        myBusinessLayer = new clsBusinessLayer(Server.MapPath("~/App_Data/"));
 
-        // Check for the user after he/she login
-        dsAccountInfo dsUserName;
-        dsUser dsUserId;
-        dsCourses dsCourse;
-
-        string tempPath = Server.MapPath("~/App_Data/ProgramaholicsAnonymous.mdb");
-        clsDataLayer dataLayerObj = new clsDataLayer(tempPath);
-        dsUserName = dataLayerObj.FindUser(Session["LoginUser"].ToString());
-
-        // hide button for new users
-        btnSaveAccount.Visible = false;
-
-        if (dsUserName.tblAccountInfo.Rows.Count > 0)
+        if (!IsPostBack)
         {
-            // fill out user information
-            lblWelcome.Text = dsUserName.tblAccountInfo[0].userName;
-            txtUser.Text = dsUserName.tblAccountInfo[0].userName;
-            txtCity.Text = dsUserName.tblAccountInfo[0].city;
-            txtState.Text = dsUserName.tblAccountInfo[0].state;
-            txtFPL.Text = dsUserName.tblAccountInfo[0].favLanguage;
-            txtLeastFPL.Text = dsUserName.tblAccountInfo[0].leastLanguage;
+            // Create a path to APP DATA
+            myBusinessLayer = new clsBusinessLayer(Server.MapPath("~/App_Data/"));
 
-            userID.Attributes.Add("class", "input-group-append d-flex");
-            lblUserID.Text = dsUserName.tblAccountInfo[0].userID.ToString();
+            // Check for the user after he/she login
+            dsAccountInfo dsUserName;
+            dsUser dsUserId;
+            dsCourses dsCourse;
 
-            btnDelete.CssClass = "btn btn-danger btn-block mr-1";
-            btnUpdateAccount.CssClass = "btn btn-primary btn-block mt-0 ml-1";
-            btnExportXML.CssClass = "btn btn-secondary btn-block mt-4";
+            string tempPath = Server.MapPath("~/App_Data/ProgramaholicsAnonymous.mdb");
+            clsDataLayer dataLayerObj = new clsDataLayer(tempPath);
+            dsUserName = dataLayerObj.FindUser(Session["LoginUser"].ToString());
 
-            // get all courses if they exist
-            dsCourse = dataLayerObj.GetAllCourses(Convert.ToInt32(lblUserID.Text));
+            // hide button for new users
+            btnSaveAccount.Visible = false;
 
-            // Bind Courses GridView
-            BindCoursesGridView();
-
-            // Do a check if the table is not empty for this user
-            if (dsCourse.tblCourses.Rows.Count > 0)
+            if (dsUserName.tblAccountInfo.Rows.Count > 0)
             {
-                // Bind XML GridView
-                BindXMLGridView();
+                // fill out user information
+                lblWelcome.Text = dsUserName.tblAccountInfo[0].userName;
+                txtUser.Text = dsUserName.tblAccountInfo[0].userName;
+                txtCity.Text = dsUserName.tblAccountInfo[0].city;
+                txtState.Text = dsUserName.tblAccountInfo[0].state;
+                txtFPL.Text = dsUserName.tblAccountInfo[0].favLanguage;
+                txtLeastFPL.Text = dsUserName.tblAccountInfo[0].leastLanguage;
+
+                userID.Attributes.Add("class", "input-group-append d-flex");
+                lblUserID.Text = dsUserName.tblAccountInfo[0].userID.ToString();
+
+                btnDelete.CssClass = "btn btn-danger btn-block mr-1";
+                btnUpdateAccount.CssClass = "btn btn-primary btn-block mt-0 ml-1";
+                btnExportXML.CssClass = "btn btn-secondary btn-block mt-4";
+
+                // get all courses if they exist
+                dsCourse = dataLayerObj.GetAllCourses(Convert.ToInt32(lblUserID.Text));
+
+                // Bind Courses GridView
+                BindCoursesGridView();
+
+                // Do a check if the table is not empty for this user
+                if (dsCourse.tblCourses.Rows.Count > 0)
+                {
+                    // Bind XML GridView
+                    BindXMLGridView();
+                }
             }
-        }
-        else
-        {
-            // find a user by ID
-            dsUserId = dataLayerObj.FindId(Session["LoginUser"].ToString());
+            else
+            {
+                // find a user by ID
+                dsUserId = dataLayerObj.FindId(Session["LoginUser"].ToString());
 
-            userID.Attributes.Add("class", "input-group-append d-flex");
-            lblUserID.Text = dsUserId.tblUsers[0].ID.ToString();
+                userID.Attributes.Add("class", "input-group-append d-flex");
+                lblUserID.Text = dsUserId.tblUsers[0].ID.ToString();
 
-            // hide to update the account information and insert it for the new one
-            btnUpdateAccount.Visible = false;
-            btnSaveAccount.Visible = true;
+                // hide to update the account information and insert it for the new one
+                btnUpdateAccount.Visible = false;
+                btnSaveAccount.Visible = true;
 
-            // Get as much data as we can
-            lblWelcome.Text = Session["LoginUser"].ToString();
-            txtUser.Text = Session["LoginUser"].ToString();
-            Session["txtUser"] = Session["LoginUser"].ToString();
+                // Get as much data as we can
+                lblWelcome.Text = Session["LoginUser"].ToString();
+                txtUser.Text = Session["LoginUser"].ToString();
+                Session["txtUser"] = Session["LoginUser"].ToString();
+            }
+
+            //Session Clear
+            if (Session["txtCity"] != null) Session.Remove("txtCity");
+            if (Session["txtState"] != null) Session.Remove("txtState");
+            if (Session["txtFPL"] != null) Session.Remove("txtFPL");
+            if (Session["txtLeastFPL"] != null) Session.Remove("txtLeastFPL");
         }
     }
 

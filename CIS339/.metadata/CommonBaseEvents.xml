@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./CommonBaseEvents.xsl"?>
+<CommonBaseEvents>
+	<CommonBaseEvent creationTime="2018-12-02T03:25:16.753Z" globalInstanceId="A1E8F5E1E377DC10CF1299E8F9FF8547" msg="*** com.ibm.ftt.ui.views.project.navigator:start: ProjectViewPlugin logging initiated" version="1.0.1">
+		<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+			<values>0</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+			<values>10</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+			<values>Common.Logging.Logger</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+			<children name="CommonBaseEventLogRecord:name" type="string">
+				<values>SEVERE</values>
+			</children>
+			<children name="CommonBaseEventLogRecord:value" type="int">
+				<values>1000</values>
+			</children>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		</extendedDataElements>
+		<sourceComponentId application="zide.project.view" component="com.ibm.ftt.ui.views.project.navigator" componentIdType="Application" location="10.154.77.51" locationType="IPV4" subComponent="Log" threadId="main" componentType="Eclipse Plugins"/>
+		<situation categoryName="ReportSituation">
+			<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+		</situation>
+	</CommonBaseEvent>
+	<CommonBaseEvent creationTime="2018-12-02T03:25:18.516Z" globalInstanceId="A1E8F5E1E484DF40CF1299E8F9FF8547" msg="com.ibm.ftt.core.migration.impl:start: MigrationPlugin logging initiated" version="1.0.1">
+		<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+			<values>6</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+			<values>10</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+			<values>Common.Logging.Logger</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+			<children name="CommonBaseEventLogRecord:name" type="string">
+				<values>CONFIG</values>
+			</children>
+			<children name="CommonBaseEventLogRecord:value" type="int">
+				<values>700</values>
+			</children>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		</extendedDataElements>
+		<sourceComponentId application="zide.migration" component="com.ibm.ftt.core.migration.impl" componentIdType="Application" location="10.154.77.51" locationType="IPV4" subComponent="Log" threadId="main" componentType="Eclipse Plugins"/>
+		<situation categoryName="ReportSituation">
+			<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+		</situation>
+	</CommonBaseEvent>
+	<CommonBaseEvent creationTime="2018-12-02T03:25:18.984Z" globalInstanceId="A1E8F5E1E3F12AC0CF1299E8F9FF8547" msg="PBWorkspace#computeAllCodeVariants: UnsupportedEncodingException for IBM-425" version="1.0.1">
+		<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+			<values>1</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+			<values>10</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+			<values>Common.Logging.Logger</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+			<children name="CommonBaseEventLogRecord:name" type="string">
+				<values>SEVERE</values>
+			</children>
+			<children name="CommonBaseEventLogRecord:value" type="int">
+				<values>1000</values>
+			</children>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		</extendedDataElements>
+		<sourceComponentId application="zide.core.resources" component="com.ibm.ftt.resources.core" componentIdType="Application" location="10.154.77.51" locationType="IPV4" subComponent="Log" threadId="main" componentType="Eclipse Plugins"/>
+		<situation categoryName="ReportSituation">
+			<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+		</situation>
+	</CommonBaseEvent>
+	<CommonBaseEvent creationTime="2018-12-02T03:25:19.186Z" globalInstanceId="A1E8F5E1E3F12AC0CF1299E8F9FF8547" msg="PBWorkspace#computeAllCodeVariants: UnsupportedEncodingException for IBM-803" version="1.0.1">
+		<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+			<values>1</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+			<values>10</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+			<values>Common.Logging.Logger</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+			<children name="CommonBaseEventLogRecord:name" type="string">
+				<values>SEVERE</values>
+			</children>
+			<children name="CommonBaseEventLogRecord:value" type="int">
+				<values>1000</values>
+			</children>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		</extendedDataElements>
+		<sourceComponentId application="zide.core.resources" component="com.ibm.ftt.resources.core" componentIdType="Application" location="10.154.77.51" locationType="IPV4" subComponent="Log" threadId="main" componentType="Eclipse Plugins"/>
+		<situation categoryName="ReportSituation">
+			<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+		</situation>
+	</CommonBaseEvent>
+	<CommonBaseEvent creationTime="2018-12-02T03:25:19.498Z" globalInstanceId="A1E8F5E1E3F12AC0CF1299E8F9FF8547" msg="PBWorkspace#computeAllCodeVariants&#xA;" version="1.0.1">
+		<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+			<values>1</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+			<values>10</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+			<values>Common.Logging.Logger</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+			<children name="CommonBaseEventLogRecord:name" type="string">
+				<values>SEVERE</values>
+			</children>
+			<children name="CommonBaseEventLogRecord:value" type="int">
+				<values>1000</values>
+			</children>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+			<values>java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 304</values>
+			<values>com.ibm.ftt.ui.model.PBWorkspace.computeAllCodeVariants(Unknown Source)</values>
+			<values>com.ibm.ftt.ui.model.PBWorkspace.startup(Unknown Source)</values>
+			<values>com.ibm.ftt.ui.views.navigator.PBPlugin.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(Unknown Source)</values>
+			<values>java.security.AccessController.doPrivileged(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.AbstractBundle.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.util.SecureAction.start(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.SingleSourcePackage.loadClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(Unknown Source)</values>
+			<values>java.lang.ClassLoader.loadClass(Unknown Source)</values>
+			<values>com.ibm.ftt.core.migration.impl.PBWorkspaceMigration.getOldWorkspaceVersion(Unknown Source)</values>
+			<values>com.ibm.ftt.core.migration.impl.PBWorkspaceMigration.getMigrator(Unknown Source)</values>
+			<values>com.ibm.ftt.core.migration.impl.PBWorkspaceMigration.performMigration(Unknown Source)</values>
+			<values>com.ibm.ftt.projects.view.ProjectViewPlugin.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(Unknown Source)</values>
+			<values>java.security.AccessController.doPrivileged(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.AbstractBundle.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.util.SecureAction.start(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(Unknown Source)</values>
+			<values>java.lang.ClassLoader.loadClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(Unknown Source)</values>
+			<values>org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(Unknown Source)</values>
+			<values>org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(Unknown Source)</values>
+			<values>org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(Unknown Source)</values>
+			<values>org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchPlugin$1.run(Unknown Source)</values>
+			<values>org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchPlugin.createExtension(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.FullDecoratorDefinition$1.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.Platform.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.FullDecoratorDefinition.internalGetDecorator(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.FullDecoratorDefinition.decorateText(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.FullTextDecoratorRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.Platform.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.DecoratorManager.safeDecorateText(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.DecoratorManager.decorateText(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.DecoratingLabelProvider.decorateSettings(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.DecoratingLabelProvider.updateLabel(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer.buildLabel(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.TreeViewer.doUpdateItem(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.Platform.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.JFaceUtil$1.run(Unknown Source)</values>
+			<values>org.eclipse.jface.util.SafeRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.Platform.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.JFaceUtil$1.run(Unknown Source)</values>
+			<values>org.eclipse.jface.util.SafeRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer.updateItem(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(Unknown Source)</values>
+			<values>org.eclipse.ui.navigator.CommonViewer.createTreeItem(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer$1.run(Unknown Source)</values>
+			<values>org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.TreeViewer.createChildren(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer$5.run(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer.preservingSelection(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.ContentViewer.setInput(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer.setInput(Unknown Source)</values>
+			<values>org.eclipse.ui.navigator.CommonNavigator.createPartControl(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.ViewReference.createPartHelper(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.ViewReference.createPart(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartPane.setVisible(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.ViewPane.setVisible(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.presentations.PresentablePart.setVisible(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartStack.refreshPresentationSelection(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartStack.createControl(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartStack.createControl(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartSashContainer.createControl(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PerspectiveHelper.activate(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Perspective.onActivate(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchPage.onActivate(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchWindow$6.run(Unknown Source)</values>
+			<values>org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchWindow.setActivePage(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchWindow.restoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.doRestoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.access$14(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench$20.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.runStartupWithProgress(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.restoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.access$12(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench$18.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.restoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.application.WorkbenchAdvisor.openWindows(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.init(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.runUI(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)</values>
+			<values>org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.ide.IDEApplication.run(Unknown Source)</values>
+			<values>org.eclipse.core.internal.runtime.PlatformActivator$1.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)</values>
+			<values>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</values>
+			<values>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)</values>
+			<values>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)</values>
+			<values>java.lang.reflect.Method.invoke(Unknown Source)</values>
+			<values>org.eclipse.core.launcher.Main.invokeFramework(Unknown Source)</values>
+			<values>org.eclipse.core.launcher.Main.basicRun(Unknown Source)</values>
+			<values>org.eclipse.core.launcher.Main.run(Unknown Source)</values>
+			<values>org.eclipse.core.launcher.Main.main(Unknown Source)</values>
+		</extendedDataElements>
+		<sourceComponentId application="zide.core.resources" component="com.ibm.ftt.resources.core" componentIdType="Application" location="10.154.77.51" locationType="IPV4" subComponent="Log" threadId="main" componentType="Eclipse Plugins"/>
+		<situation categoryName="ReportSituation">
+			<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+		</situation>
+	</CommonBaseEvent>
+	<CommonBaseEvent creationTime="2018-12-02T03:25:19.732Z" globalInstanceId="A1E8F5E1E3F12AC0CF1299E8F9FF8547" msg="PBWorkspace#computeAllCodeVariants&#xA;" version="1.0.1">
+		<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+			<values>1</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+			<values>10</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+			<values>Common.Logging.Logger</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+			<children name="CommonBaseEventLogRecord:name" type="string">
+				<values>SEVERE</values>
+			</children>
+			<children name="CommonBaseEventLogRecord:value" type="int">
+				<values>1000</values>
+			</children>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+			<values>java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 350</values>
+			<values>com.ibm.ftt.ui.model.PBWorkspace.computeAllCodeVariants(Unknown Source)</values>
+			<values>com.ibm.ftt.ui.model.PBWorkspace.startup(Unknown Source)</values>
+			<values>com.ibm.ftt.ui.views.navigator.PBPlugin.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(Unknown Source)</values>
+			<values>java.security.AccessController.doPrivileged(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.AbstractBundle.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.util.SecureAction.start(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.SingleSourcePackage.loadClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(Unknown Source)</values>
+			<values>java.lang.ClassLoader.loadClass(Unknown Source)</values>
+			<values>com.ibm.ftt.core.migration.impl.PBWorkspaceMigration.getOldWorkspaceVersion(Unknown Source)</values>
+			<values>com.ibm.ftt.core.migration.impl.PBWorkspaceMigration.getMigrator(Unknown Source)</values>
+			<values>com.ibm.ftt.core.migration.impl.PBWorkspaceMigration.performMigration(Unknown Source)</values>
+			<values>com.ibm.ftt.projects.view.ProjectViewPlugin.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(Unknown Source)</values>
+			<values>java.security.AccessController.doPrivileged(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.AbstractBundle.start(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.util.SecureAction.start(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(Unknown Source)</values>
+			<values>java.lang.ClassLoader.loadClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(Unknown Source)</values>
+			<values>org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(Unknown Source)</values>
+			<values>org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(Unknown Source)</values>
+			<values>org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(Unknown Source)</values>
+			<values>org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(Unknown Source)</values>
+			<values>org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchPlugin$1.run(Unknown Source)</values>
+			<values>org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchPlugin.createExtension(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.FullDecoratorDefinition$1.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.Platform.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.FullDecoratorDefinition.internalGetDecorator(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.FullDecoratorDefinition.decorateText(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.FullTextDecoratorRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.Platform.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.DecoratorManager.safeDecorateText(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.decorators.DecoratorManager.decorateText(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.DecoratingLabelProvider.decorateSettings(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.DecoratingLabelProvider.updateLabel(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer.buildLabel(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.TreeViewer.doUpdateItem(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer$UpdateItemSafeRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.Platform.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.JFaceUtil$1.run(Unknown Source)</values>
+			<values>org.eclipse.jface.util.SafeRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer.doUpdateItem(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer$UpdateItemSafeRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.Platform.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.JFaceUtil$1.run(Unknown Source)</values>
+			<values>org.eclipse.jface.util.SafeRunnable.run(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer.updateItem(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer.createTreeItem(Unknown Source)</values>
+			<values>org.eclipse.ui.navigator.CommonViewer.createTreeItem(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer$1.run(Unknown Source)</values>
+			<values>org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.TreeViewer.createChildren(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer$5.run(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer.preservingSelection(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.ContentViewer.setInput(Unknown Source)</values>
+			<values>org.eclipse.jface.viewers.StructuredViewer.setInput(Unknown Source)</values>
+			<values>org.eclipse.ui.navigator.CommonNavigator.createPartControl(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.ViewReference.createPartHelper(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.ViewReference.createPart(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchPartReference.getPart(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartPane.setVisible(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.ViewPane.setVisible(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.presentations.PresentablePart.setVisible(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartStack.refreshPresentationSelection(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartStack.createControl(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartStack.createControl(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PartSashContainer.createControl(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.PerspectiveHelper.activate(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Perspective.onActivate(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchPage.onActivate(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchWindow$6.run(Unknown Source)</values>
+			<values>org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchWindow.setActivePage(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchWindow.restoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.doRestoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.access$14(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench$20.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.runStartupWithProgress(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.restoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.access$12(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench$18.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.SafeRunner.run(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.restoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(Unknown Source)</values>
+			<values>org.eclipse.ui.application.WorkbenchAdvisor.openWindows(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.init(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.runUI(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)</values>
+			<values>org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)</values>
+			<values>org.eclipse.ui.internal.ide.IDEApplication.run(Unknown Source)</values>
+			<values>org.eclipse.core.internal.runtime.PlatformActivator$1.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)</values>
+			<values>org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)</values>
+			<values>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</values>
+			<values>sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)</values>
+			<values>sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)</values>
+			<values>java.lang.reflect.Method.invoke(Unknown Source)</values>
+			<values>org.eclipse.core.launcher.Main.invokeFramework(Unknown Source)</values>
+			<values>org.eclipse.core.launcher.Main.basicRun(Unknown Source)</values>
+			<values>org.eclipse.core.launcher.Main.run(Unknown Source)</values>
+			<values>org.eclipse.core.launcher.Main.main(Unknown Source)</values>
+		</extendedDataElements>
+		<sourceComponentId application="zide.core.resources" component="com.ibm.ftt.resources.core" componentIdType="Application" location="10.154.77.51" locationType="IPV4" subComponent="Log" threadId="main" componentType="Eclipse Plugins"/>
+		<situation categoryName="ReportSituation">
+			<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+		</situation>
+	</CommonBaseEvent>
+	<CommonBaseEvent creationTime="2018-12-02T03:25:19.966Z" globalInstanceId="A1E8F5E1E3F12AC0CF1299E8F9FF8547" msg="PBWorkspace#computeAllCodeVariants: UnsupportedEncodingException for IBM-1153" version="1.0.1">
+		<extendedDataElements name="CommonBaseEventLogRecord:sequenceNumber" type="long">
+			<values>1</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:threadID" type="int">
+			<values>10</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:loggerName" type="string">
+			<values>Common.Logging.Logger</values>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:level" type="noValue">
+			<children name="CommonBaseEventLogRecord:name" type="string">
+				<values>SEVERE</values>
+			</children>
+			<children name="CommonBaseEventLogRecord:value" type="int">
+				<values>1000</values>
+			</children>
+		</extendedDataElements>
+		<extendedDataElements name="CommonBaseEventLogRecord:stackTrace" type="stringArray">
+		</extendedDataElements>
+		<sourceComponentId application="zide.core.resources" component="com.ibm.ftt.resources.core" componentIdType="Application" location="10.154.77.51" locationType="IPV4" subComponent="Log" threadId="main" componentType="Eclipse Plugins"/>
+		<situation categoryName="ReportSituation">
+			<situationType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportSituation" reasoningScope="INTERNAL" reportCategory="LOG"/>
+		</situation>
+	</CommonBaseEvent>
+</CommonBaseEvents>

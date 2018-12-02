@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pluginbuilders>
+<ext type="esql">
+<builder class="com.ibm.etools.esql.lang.builder.EsqlLangPluginBuilder" plugin="com.ibm.etools.sfm.mft.esql.lang" version="7.0.200.v201002091151"/>
+</ext>
+</pluginbuilders>

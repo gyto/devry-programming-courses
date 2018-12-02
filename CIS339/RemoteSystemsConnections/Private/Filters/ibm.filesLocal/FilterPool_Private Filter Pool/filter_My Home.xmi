@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filters:SystemFilter xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:filters="http:///filters.ecore" name="My Home" relativeOrder="2" stringsCaseSensitive="false" release="711">
+  <strings string="\\sce.academic.net\HOMEDIR$\D40685801\*"/>
+</filters:SystemFilter>

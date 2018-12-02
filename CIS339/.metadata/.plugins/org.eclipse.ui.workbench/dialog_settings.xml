@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+	</section>
+	<section name="ShowViewDialog">
+		<item key="ShowViewDialog.STORE_SELECTED_VIEW_ID" value="org.eclipse.ui.navigator.ProjectExplorer"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui"/>
+			<item value="datatools.server.ui.category"/>
+			<item value="neoWithAView"/>
+			<item value="com.ibm.etools.iseries.views"/>
+			<item value="org.eclipse.jdt.ui.java.browsing"/>
+			<item value="com.ibm.ftt.ui.projects"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

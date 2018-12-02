@@ -1,0 +1,10 @@
+#Sat Nov 10 12:56:00 CST 2018
+org.eclipse.jdt.core.compiler.compliance=1.5
+org.eclipse.jdt.core.classpathVariable.WAS_V61_IMPL_FACTORY_PROP=C\:/Program Files (x86)/IBM/SDP70Shared/plugins/com.ibm.websphere.v61_6.1.202/implfactory.jar
+org.eclipse.jdt.core.classpathVariable.WAS_V6_IMPL_FACTORY_PROP=C\:/Program Files (x86)/IBM/SDP70Shared/plugins/com.ibm.websphere.v6_6.0.200/implfactory.jar
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.5
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=*.launch
+eclipse.preferences.version=1
+org.eclipse.jdt.core.compiler.source=1.5
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
