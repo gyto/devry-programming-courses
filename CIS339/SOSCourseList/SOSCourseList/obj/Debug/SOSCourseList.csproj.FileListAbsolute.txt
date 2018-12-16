@@ -1,0 +1,7 @@
+J:\Projects\devry-university\CIS339\SOSCourseList\SOSCourseList\bin\Debug\SOSCourseList.exe.config
+J:\Projects\devry-university\CIS339\SOSCourseList\SOSCourseList\bin\Debug\SOSCourseList.exe
+J:\Projects\devry-university\CIS339\SOSCourseList\SOSCourseList\bin\Debug\SOSCourseList.pdb
+J:\Projects\devry-university\CIS339\SOSCourseList\SOSCourseList\obj\Debug\SOSCourseList.csprojAssemblyReference.cache
+J:\Projects\devry-university\CIS339\SOSCourseList\SOSCourseList\obj\Debug\SOSCourseList.csproj.CoreCompileInputs.cache
+J:\Projects\devry-university\CIS339\SOSCourseList\SOSCourseList\obj\Debug\SOSCourseList.exe
+J:\Projects\devry-university\CIS339\SOSCourseList\SOSCourseList\obj\Debug\SOSCourseList.pdb
